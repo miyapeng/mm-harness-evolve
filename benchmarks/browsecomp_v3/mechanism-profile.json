@@ -1,0 +1,50 @@
+{
+  "task_domain": "cross-modal web evidence acquisition and integration",
+  "modalities": [
+    "image",
+    "document_visual",
+    "mixed"
+  ],
+  "environment_type": "OmniSeeker + external MCP/search services",
+  "initial_media_available": true,
+  "active_observation_available": true,
+  "interactive_environment": true,
+  "current_h0_harness": "Official OmniSeeker@8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+  "current_h0_media_policy": "Initial image append, tool images, image compression and cross-modal search results in http_mcp_env; search services separately configured.",
+  "agent_visible_media": [
+    "question images",
+    "retrieved public web/image evidence"
+  ],
+  "evaluator_only_media": [
+    "answer",
+    "sub_goals",
+    "grading metadata/reference evidence"
+  ],
+  "development_data_status": "HF release uses data/train.jsonl filename; independent development partition NOT established by that name.",
+  "heldout_evaluation_status": "Public evaluation questions reserved; no data downloaded/decrypted or rollout executed this refactor.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "plausible",
+  "integration_status": "source_integrated",
+  "integration_evidence": [
+    "benchmarks/browsecomp_v3/upstream/SOURCE.json"
+  ],
+  "limitations": [
+    "Task discovery supports decrypted local sample schema; actual dataset and service integration pending.",
+    "Official loader carries answer/metadata: new discovery exports only allowlisted question/image input.",
+    "Ground is image-dependent search/entity arguments, not assumed GUI clicks.",
+    "Official evaluation uses model judging; media Verify in A not established."
+  ],
+  "source_lock": "BrowseComp-V3",
+  "benchmark_id": "browsecomp_v3",
+  "status": "active",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/browsecomp_v3/mutation-boundary.json"
+}

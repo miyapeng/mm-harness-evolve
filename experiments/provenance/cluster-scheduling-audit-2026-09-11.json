@@ -1,0 +1,786 @@
+{
+  "recorded_at": "2026-09-11T06:47:08.560779+00:00",
+  "cluster": "cluster-t",
+  "queue": "queue-t-reserved-llm-frontier",
+  "cluster_capacity": {
+    "reported_nodes": 339,
+    "rows_received": 339,
+    "unique_nodes": 338,
+    "capacity": {
+      "CPU": {
+        "total": 37856,
+        "allocated": 28489,
+        "unallocated": 9365
+      },
+      "MEMORY": {
+        "total": 648960,
+        "allocated": 393691,
+        "unallocated": 255267
+      },
+      "DEVICE": {
+        "total": 2704,
+        "allocated": 2352,
+        "unallocated": 352
+      }
+    },
+    "nodes_fitting_two_gpu_request": [
+      {
+        "node": "ecp-tcluster-a763b6ba-f1a1",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-a763b6ba-cbb1",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-a763b6ba-c026",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-a763b6ba-171c",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-2c31b451-6e6f",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-2c31b451-235f",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-e5c4086e-7012",
+        "free": {
+          "CPU": 84,
+          "MEMORY": 1440,
+          "DEVICE": 6
+        }
+      },
+      {
+        "node": "ecp-tcluster-e5c4086e-44e2",
+        "free": {
+          "CPU": 56,
+          "MEMORY": 960,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-e5c4086e-c2e8",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-e5c4086e-84a2",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-104b52be-8911",
+        "free": {
+          "CPU": 104,
+          "MEMORY": 1870,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-c2522fd2-f7ca",
+        "free": {
+          "CPU": 48,
+          "MEMORY": 1390,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-c2522fd2-45a7",
+        "free": {
+          "CPU": 48,
+          "MEMORY": 1390,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-7556",
+        "free": {
+          "CPU": 46,
+          "MEMORY": 1152,
+          "DEVICE": 3
+        }
+      },
+      {
+        "node": "ecp-tcluster-d87c",
+        "free": {
+          "CPU": 56,
+          "MEMORY": 1240,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-3174",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-50ff",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-8308",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-06f9",
+        "free": {
+          "CPU": 28,
+          "MEMORY": 480,
+          "DEVICE": 2
+        }
+      },
+      {
+        "node": "ecp-tcluster-7757",
+        "free": {
+          "CPU": 54,
+          "MEMORY": 1120,
+          "DEVICE": 2
+        }
+      },
+      {
+        "node": "ecp-tcluster-1753",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-3c80",
+        "free": {
+          "CPU": 20,
+          "MEMORY": 352,
+          "DEVICE": 2
+        }
+      },
+      {
+        "node": "ecp-tcluster-ccfe",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-a06a",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-4e63",
+        "free": {
+          "CPU": 64,
+          "MEMORY": 1472,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-076b",
+        "free": {
+          "CPU": 67,
+          "MEMORY": 1390,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-e82c",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-1492",
+        "free": {
+          "CPU": 92,
+          "MEMORY": 1550,
+          "DEVICE": 7
+        }
+      },
+      {
+        "node": "ecp-tcluster-d667",
+        "free": {
+          "CPU": 66,
+          "MEMORY": 1336,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-2286",
+        "free": {
+          "CPU": 64,
+          "MEMORY": 1520,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-f30c",
+        "free": {
+          "CPU": 52,
+          "MEMORY": 1184,
+          "DEVICE": 7
+        }
+      },
+      {
+        "node": "ecp-tcluster-2dd0",
+        "free": {
+          "CPU": 52,
+          "MEMORY": 985,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-2b75",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-09be",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-3376",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-4ede",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-6c05",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-4fa6",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-996d",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-3ba1",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-06bf",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-f369",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-4987",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-c066",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-7ada",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-4898",
+        "free": {
+          "CPU": 80,
+          "MEMORY": 1408,
+          "DEVICE": 5
+        }
+      },
+      {
+        "node": "ecp-tcluster-2312",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-7087",
+        "free": {
+          "CPU": 28,
+          "MEMORY": 480,
+          "DEVICE": 2
+        }
+      },
+      {
+        "node": "ecp-tcluster-9e94",
+        "free": {
+          "CPU": 56,
+          "MEMORY": 960,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-2e02",
+        "free": {
+          "CPU": 68,
+          "MEMORY": 1568,
+          "DEVICE": 3
+        }
+      }
+    ],
+    "count_consistent": false
+  },
+  "queue_capacity": {
+    "reported_nodes": 56,
+    "rows_received": 56,
+    "unique_nodes": 56,
+    "capacity": {
+      "CPU": {
+        "total": 6272,
+        "allocated": 4023,
+        "unallocated": 2249
+      },
+      "MEMORY": {
+        "total": 107520,
+        "allocated": 44765,
+        "unallocated": 62755
+      },
+      "DEVICE": {
+        "total": 448,
+        "allocated": 377,
+        "unallocated": 71
+      }
+    },
+    "nodes_fitting_two_gpu_request": [
+      {
+        "node": "ecp-tcluster-2286",
+        "free": {
+          "CPU": 64,
+          "MEMORY": 1520,
+          "DEVICE": 4
+        }
+      },
+      {
+        "node": "ecp-tcluster-2dd0",
+        "free": {
+          "CPU": 52,
+          "MEMORY": 985,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-2b75",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-f30c",
+        "free": {
+          "CPU": 52,
+          "MEMORY": 1184,
+          "DEVICE": 7
+        }
+      },
+      {
+        "node": "ecp-tcluster-d667",
+        "free": {
+          "CPU": 66,
+          "MEMORY": 1336,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-1492",
+        "free": {
+          "CPU": 92,
+          "MEMORY": 1550,
+          "DEVICE": 7
+        }
+      },
+      {
+        "node": "ecp-tcluster-076b",
+        "free": {
+          "CPU": 67,
+          "MEMORY": 1390,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-7556",
+        "free": {
+          "CPU": 46,
+          "MEMORY": 1152,
+          "DEVICE": 3
+        }
+      },
+      {
+        "node": "ecp-tcluster-7757",
+        "free": {
+          "CPU": 54,
+          "MEMORY": 1120,
+          "DEVICE": 2
+        }
+      },
+      {
+        "node": "ecp-tcluster-4e63",
+        "free": {
+          "CPU": 64,
+          "MEMORY": 1472,
+          "DEVICE": 8
+        }
+      },
+      {
+        "node": "ecp-tcluster-a763b6ba-171c",
+        "free": {
+          "CPU": 112,
+          "MEMORY": 1920,
+          "DEVICE": 8
+        }
+      }
+    ],
+    "count_consistent": true
+  },
+  "own_jobs": [
+    {
+      "name": "mmhe-q38-2gpu-0911-a",
+      "status": {
+        "conditions": [
+          {
+            "last_transition_time": "2026-09-11T05:20:37Z",
+            "status": "PENDING"
+          },
+          {
+            "last_transition_time": "2026-09-11T05:20:42Z",
+            "status": "PENDING"
+          }
+        ],
+        "create_time": "2026-09-11T05:20:36.845584Z",
+        "state": "PENDING",
+        "update_time": "2026-09-11T05:20:42.763582Z"
+      },
+      "priority": "NORMAL",
+      "tasks": [
+        {
+          "replicas": 1,
+          "resources": {
+            "accelerate_device_count": 2,
+            "accelerate_device_memory_gib": 80,
+            "accelerate_device_model": "A800",
+            "cpu_count": 16,
+            "cpu_frequency_mhz": 2600,
+            "cpu_model": "Platinum 8358P",
+            "memory_gib": 192,
+            "rdma_name": "ib-cluster-02",
+            "shm_size_gib": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "mmhe-swe-image-probe-0911",
+      "status": {
+        "conditions": [
+          {
+            "last_transition_time": "2026-09-11T05:29:14Z",
+            "status": "PENDING"
+          },
+          {
+            "last_transition_time": "2026-09-11T05:29:16Z",
+            "status": "PENDING"
+          }
+        ],
+        "create_time": "2026-09-11T05:29:14.049348Z",
+        "state": "PENDING",
+        "update_time": "2026-09-11T05:29:18.159893Z"
+      },
+      "priority": "NORMAL",
+      "tasks": [
+        {
+          "replicas": 1,
+          "resources": {
+            "accelerate_device_memory_gib": 80,
+            "accelerate_device_model": "A800",
+            "cpu_count": 2,
+            "cpu_frequency_mhz": 2600,
+            "cpu_model": "Platinum 8358P",
+            "memory_gib": 8,
+            "rdma_name": "ib-cluster-02",
+            "shm_size_gib": 2
+          }
+        }
+      ]
+    }
+  ],
+  "pending": {
+    "reported_total": 7,
+    "listed": [
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T06:47:04.761399Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 8,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 64,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "machine_types": [
+                "n3ls.ii.i60a"
+              ],
+              "memory_gib": 640,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 128
+            }
+          }
+        ]
+      },
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T06:25:41.625827Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 8,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 64,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "machine_types": [
+                "n3ls.ii.i60a"
+              ],
+              "memory_gib": 640,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 128
+            }
+          }
+        ]
+      },
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T06:20:41.559504Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 4,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 56,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "machine_types": [
+                "n3ls.ii.i60a"
+              ],
+              "memory_gib": 960,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 128
+            }
+          }
+        ]
+      },
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T05:36:53.195194Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 3,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 36,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "memory_gib": 384,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 48
+            }
+          }
+        ]
+      },
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T05:29:14.049348Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 2,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "memory_gib": 8,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 2
+            }
+          }
+        ]
+      },
+      {
+        "priority": "NORMAL",
+        "created": "2026-09-11T05:20:36.845584Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 2,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 16,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "memory_gib": 192,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 32
+            }
+          }
+        ]
+      },
+      {
+        "priority": "HIGHEST",
+        "created": "2026-09-11T04:34:08.511362Z",
+        "tasks": [
+          {
+            "replicas": 1,
+            "resources": {
+              "accelerate_device_count": 8,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 64,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "memory_gib": 800,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 64
+            }
+          },
+          {
+            "replicas": 7,
+            "resources": {
+              "accelerate_device_count": 8,
+              "accelerate_device_memory_gib": 80,
+              "accelerate_device_model": "A800",
+              "cpu_count": 64,
+              "cpu_frequency_mhz": 2600,
+              "cpu_model": "Platinum 8358P",
+              "memory_gib": 800,
+              "rdma_name": "ib-cluster-02",
+              "shm_size_gib": 64
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Node pages are not an atomic snapshot; report count discrepancies.",
+    "Free capacity is not a guarantee of schedulability.",
+    "Pending state does not identify a scheduler rejection reason."
+  ]
+}

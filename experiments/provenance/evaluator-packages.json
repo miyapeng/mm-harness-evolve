@@ -1,0 +1,20 @@
+{
+  "torch": "2.6.0+cu124",
+  "torchvision": "0.21.0+cu124",
+  "openai-clip": "1.0.1",
+  "playwright": "1.60.0",
+  "Pillow": "12.2.0",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "beautifulsoup4": "4.15.0",
+  "matplotlib": "3.10.9",
+  "scikit-image": "0.25.2",
+  "tqdm": "4.70.0",
+  "setuptools": "83.0.0",
+  "opencv-python-headless": "4.11.0.86",
+  "scikit-learn": "1.7.2",
+  "colormath": "3.0.0",
+  "packaging": "26.0",
+  "ftfy": "6.3.1",
+  "regex": "2026.7.19"
+}

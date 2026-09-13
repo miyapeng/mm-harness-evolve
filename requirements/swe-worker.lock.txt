@@ -1,0 +1,47 @@
+# Python 3.12; additions to the read-only vllm conda base. See setup_swe_worker.sh.
+bashlex==0.18
+bidict==0.24.1
+blinker==1.9.0
+boto3==1.43.93
+botocore==1.43.93
+datasets==5.0.1
+fastcore==1.14.5
+fastuuid==0.14.0
+Flask==3.1.3
+flask-cors==6.0.5
+Flask-SocketIO==5.6.1
+ghapi==1.1.1
+gitdb==4.0.12
+GitPython==3.1.62
+greenlet==3.5.5
+importlib_metadata==8.9.0
+itsdangerous==2.2.0
+linkify-it-py==2.2.0
+litellm==1.100.1
+mdit-py-plugins==0.6.1
+multiprocess==0.70.19
+pandas==3.0.5
+pexpect==4.9.0
+platformdirs==4.11.8
+playwright==1.62.0
+ptyprocess==0.7.0
+pyarrow==25.0.1
+pyee==13.0.1
+python-dateutil==2.9.0.post0
+python-engineio==4.14.0
+python-socketio==5.16.4
+rich-argparse==1.8.0
+ruamel.yaml==0.19.1
+s3transfer==0.19.2
+simple-parsing==0.1.9
+simple-websocket==1.1.0
+smmap==5.0.3
+swe-rex==1.4.0
+# Editable Git install with no remote (sweagent==1.1.0)
+-e ./third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5
+tenacity==9.1.4
+textual==8.2.8
+unidiff==1.0.0
+Werkzeug==3.1.8
+wsproto==1.3.2
+xxhash==4.0.1

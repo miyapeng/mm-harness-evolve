@@ -1,0 +1,1 @@
+{"mode":"upstream_default","source":"S3 single trajectory; no bBoN"}

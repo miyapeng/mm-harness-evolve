@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/stanford-iris-lab/meta-harness",
+  "commit": "44b9942127847f7421db70d8c7e48407f09a3c70",
+  "upstream_path": "reference_examples/terminal_bench_2/claude_wrapper.py",
+  "sha256": "5ff005d6c1d2f8500b643f71432a9649fc425503f7fee2183df858a95b33de3e",
+  "license": "MIT",
+  "local_changes": "none",
+  "used_functions": [
+    "parse_stream_events",
+    "log_session"
+  ],
+  "unused": "run/build_command/skill loading are not invoked; fixed Qwen transport remains local",
+  "acquisition": "official git clone; detached checkout at pinned commit; vendored file byte-identical"
+}

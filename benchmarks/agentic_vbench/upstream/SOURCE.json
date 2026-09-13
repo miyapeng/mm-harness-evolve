@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/PhiloLabs/agentic-vbench",
+  "commit": "6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+  "path": "third_party/AgenticVBench-6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+  "archive_sha256": "6cf159c2ab851abbb8567d12e4c232e4403cf20f9e4f4e6469a0260df5914d1a",
+  "local_changes": "none; pinned official archive; never executed during integration",
+  "integration": "source_integrated; static discovery only, no rollout or scorer validation",
+  "license_note": "Apache-2.0; see upstream LICENSE"
+}

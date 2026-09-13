@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-11T05:43:00.743187+00:00",
+  "jobs": [
+    {
+      "job_id": "mmhe-q38-2gpu-0911-a",
+      "gpus": 2,
+      "cpus": 16,
+      "memory_gib": 192,
+      "replicas": 1,
+      "exclusive_node": false,
+      "privileged": false,
+      "status": "QUEUING",
+      "service_lease_hours": 6,
+      "ready_path": "runs/services/mmhe-q38-2gpu-0911-a/ready.json",
+      "submission_script": "scripts/submit_qwen38.sh"
+    },
+    {
+      "job_id": "mmhe-swe-image-probe-0911",
+      "gpus": 0,
+      "cpus": 2,
+      "memory_gib": 8,
+      "status": "QUEUING",
+      "probe_only": true,
+      "script": "benchmarks/swe_mm/probe_container.sh"
+    }
+  ],
+  "note": "Statuses are observations at recorded_at, not live status. Do not submit duplicates while these are queued/running."
+}

@@ -1,0 +1,49 @@
+{
+  "status": "reserve_transfer",
+  "task_domain": "heterogeneous multimodal cross-domain transfer",
+  "modalities": [
+    "image"
+  ],
+  "environment_type": "official claw_eval.runner.loop.run_task with benchmark sandbox tools",
+  "initial_media_available": true,
+  "active_observation_available": null,
+  "interactive_environment": null,
+  "current_h0_harness": "official claw_eval.runner.loop.run_task with benchmark sandbox tools",
+  "current_h0_media_policy": "Historical adapter/protocol retained; no new runtime claim.",
+  "agent_visible_media": [
+    "task.prompt.text",
+    "task.prompt.attachments",
+    "released workspace fixtures and sandbox_files",
+    "declared tools and tool observations"
+  ],
+  "evaluator_only_media": [
+    "reference_solution",
+    "judge_rubric",
+    "scoring_components and safety_checks",
+    "sandbox_grader_files and local_grader_files",
+    "private audit and env_snapshot grading material"
+  ],
+  "development_data_status": "No approved current development pool; historical splits are not reclassified.",
+  "heldout_evaluation_status": "No current protocol evaluation.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "unknown",
+  "integration_status": "source_integrated",
+  "integration_evidence": [
+    "benchmarks/claw_eval_mm/upstream/SOURCE.json"
+  ],
+  "limitations": [
+    "Kept for history/transfer; no active integration claim."
+  ],
+  "source_lock": "Claw-Eval",
+  "benchmark_id": "claw_eval_mm",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/claw_eval_mm/mutation-boundary.json"
+}

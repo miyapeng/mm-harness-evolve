@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/Halcyon-Zhang/BrowseComp-V3",
+  "commit": "8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+  "path": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+  "archive_sha256": "792c980e8cdf38eba20eff325645ecff757e482c758b8849165b01edc546841c",
+  "local_changes": "none; pinned official archive; never executed during integration",
+  "integration": "source_integrated; static discovery only, no rollout or scorer validation",
+  "license_note": "README declares CC BY 4.0 and links dataset card; no standalone source LICENSE in this revision; redistribution review remains open."
+}

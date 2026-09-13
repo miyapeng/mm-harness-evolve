@@ -1,0 +1,43 @@
+{
+  "task_domain": "game implementation with active image/video feedback",
+  "modalities": [
+    "image",
+    "video",
+    "rendered_artifact"
+  ],
+  "environment_type": "Godot project + gameplay/test environment",
+  "initial_media_available": null,
+  "active_observation_available": true,
+  "interactive_environment": true,
+  "current_h0_harness": "Official OpenHandsSolver + visual feedback configuration; recipe only, revision not frozen",
+  "current_h0_media_policy": "Official gameplay visual feedback intended; actual tool settings and media lifecycle not yet integrated.",
+  "agent_visible_media": [
+    "task-approved assets",
+    "runtime game screenshots/video when supported"
+  ],
+  "evaluator_only_media": [
+    "hidden tests/reference implementation"
+  ],
+  "development_data_status": "No independently approved development pool; needs protocol review.",
+  "heldout_evaluation_status": "Official evaluation reserved; not run.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "plausible",
+  "integration_status": "planned",
+  "integration_evidence": [],
+  "limitations": [
+    "Adapter skeleton only; no upstream source lock/Godot validation.",
+    "Ground depends on the actual gameplay tool interface; not assumed applicable."
+  ],
+  "source_lock": null,
+  "benchmark_id": "gamedevbench",
+  "status": "active",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/gamedevbench/mutation-boundary.json"
+}

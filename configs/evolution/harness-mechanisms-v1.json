@@ -1,0 +1,38 @@
+{
+  "id": "generic-harness-mechanisms-v1",
+  "categories": {
+    "prompt_context": {
+      "title": "Prompts and context templates",
+      "allowed": ["system and step instructions", "format and organization of tool feedback", "context construction templates"],
+      "evidence": "Compare the actual instructions/context A received with its actions; identify an actionable ambiguity or omission."
+    },
+    "visual_observation": {
+      "title": "Visual observation policy",
+      "allowed": ["observation timing", "screenshot freshness/invalidation", "crop and frame selection", "reobservation"],
+      "evidence": "Relate actions/edits, observation timestamps/state, image contents and actual model requests; distinguish absent evidence from absent observations."
+    },
+    "history_memory": {
+      "title": "History and memory",
+      "allowed": ["retain, compress and retrieve execution evidence", "invalidate stale state", "associate memory with events and versions"],
+      "evidence": "Show which relevant evidence was retained, lost or retrieved in actual A requests. Do not memorize task answers."
+    },
+    "tool_orchestration": {
+      "title": "Tool wrapping and orchestration",
+      "allowed": ["compose existing tools", "parse tool outputs", "reorder calls", "recover from tool errors"],
+      "evidence": "Use tool calls, results and resulting environment state to identify the failure; preserve underlying capabilities and permissions."
+    },
+    "retry_stop": {
+      "title": "Retry and stopping policy",
+      "allowed": ["allocate retries within fixed total budget", "terminate earlier", "recover after repeated failures"],
+      "evidence": "Locate repeated ineffective actions or premature stopping; predict cost as well as behavior. Never increase the outer budget."
+    },
+    "internal_verification": {
+      "title": "Harness-internal verification",
+      "allowed": ["when to run existing tests", "render and interaction checks", "conditions for accepting completion within a rollout"],
+      "evidence": "Relate final edits, checks and remaining defects; internal checks do not replace official benchmark evaluation."
+    }
+  },
+  "candidate_rule": "One primary mechanism; supporting categories/files are allowed when they implement the same hypothesis. Explain each changed file in change_map.",
+  "fixed": ["model weights/version/provider and sampling settings", "total budgets and external enforcement", "base tool/environment permissions", "official task inputs and dataset splits", "official evaluator and reference answers", "fixed B runtime and prompts", "immutable evidence and experiment records"],
+  "process": "One autonomous B session. Read and diagnose before editing as a prompt convention; the controller checks handoff artifacts and scope, not a seven-stage workflow."
+}

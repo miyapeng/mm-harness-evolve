@@ -1,0 +1,387 @@
+{
+  "schema": 3,
+  "benchmark": "swe_mm",
+  "mutable": [
+    {
+      "path": "sweagent/agent/agents.py",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "transform",
+        "persist",
+        "route",
+        "ground",
+        "verify"
+      ]
+    },
+    {
+      "path": "sweagent/agent/history_processors.py",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "persist",
+        "route",
+        "transform"
+      ]
+    },
+    {
+      "path": "tools/image_tools/bin/",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "transform"
+      ]
+    },
+    {
+      "path": "tools/web_browser/bin/",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "ground",
+        "verify"
+      ]
+    },
+    {
+      "path": "tools/web_browser/lib/",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "persist",
+        "ground"
+      ]
+    },
+    {
+      "path": "tools/review_on_submit_m/bin/submit",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "verify"
+      ]
+    },
+    {
+      "path": "sweagent/tools/parsing.py",
+      "scopes": [
+        "generic"
+      ],
+      "mm_stages": []
+    },
+    {
+      "path": "sweagent/tools/commands.py",
+      "scopes": [
+        "generic"
+      ],
+      "mm_stages": []
+    },
+    {
+      "path": "sweagent/agent/harness_extensions/",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "transform",
+        "persist",
+        "route",
+        "ground",
+        "verify"
+      ]
+    },
+    {
+      "path": "config/default_mm_with_images.yaml",
+      "scopes": [
+        "generic",
+        "multimodal_specific"
+      ],
+      "mm_stages": [
+        "acquire",
+        "transform",
+        "persist",
+        "route",
+        "ground",
+        "verify"
+      ],
+      "yaml_paths": [
+        "agent.history_processors",
+        "agent.templates.instance_template",
+        "agent.templates.next_step_no_output_template",
+        "agent.templates.next_step_template",
+        "agent.templates.system_template",
+        "agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"
+      ]
+    }
+  ],
+  "fixed": {
+    "evaluator": [
+      "scorer/",
+      "evaluator/",
+      "evaluation/",
+      "tests/",
+      "**/steps/*/tests/**",
+      "**/judge*"
+    ],
+    "ground_truth": [
+      "data/",
+      "tasks/",
+      "solutions/",
+      "oracle/",
+      "ground_truth/"
+    ],
+    "environment": [
+      "environment/",
+      "docker/",
+      "**/Dockerfile",
+      "**/install.sh",
+      "sweagent/environment/",
+      "sweagent/run/",
+      "sweagent/tools/tools.py",
+      "tools/*/install.sh",
+      "pyproject.toml"
+    ],
+    "model_provider": [
+      "models/",
+      "providers/",
+      "configs/models/",
+      "sweagent/agent/models.py",
+      "sweagent/agent/problem_statement.py"
+    ],
+    "outer_controller": [
+      "mm_harness/",
+      "scripts/"
+    ]
+  },
+  "stage_locations": {
+    "acquire": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/image_tools/bin/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/bin/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/lib/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ],
+    "transform": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/history_processors.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/image_tools/bin/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ],
+    "persist": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/history_processors.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/lib/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ],
+    "route": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/history_processors.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ],
+    "ground": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/bin/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/lib/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ],
+    "verify": [
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/agents.py",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/web_browser/bin/",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "tools/review_on_submit_m/bin/submit",
+        "status": "source_located"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "sweagent/agent/harness_extensions/",
+        "status": "extension_point"
+      },
+      {
+        "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+        "path": "config/default_mm_with_images.yaml",
+        "status": "source_located"
+      }
+    ]
+  },
+  "generic_source": [
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "sweagent/agent/agents.py"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "sweagent/agent/history_processors.py"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "tools/image_tools/bin/"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "tools/web_browser/bin/"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "tools/web_browser/lib/"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "tools/review_on_submit_m/bin/submit"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "sweagent/tools/parsing.py"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "sweagent/tools/commands.py"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "sweagent/agent/harness_extensions/"
+    },
+    {
+      "source_root": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "config/default_mm_with_images.yaml"
+    }
+  ],
+  "unlocated_stages": [],
+  "limitations": [
+    "Shared DefaultAgent methods are execution extension points, not proof of existing fresh/ground/verify policies.",
+    "File/YAML guards cannot prove semantic invariants of arbitrary source edits; fixed gateway budgets and worker permissions remain external."
+  ],
+  "preserve_template_inputs": [
+    "agent.templates.system_template",
+    "agent.templates.instance_template",
+    "agent.templates.next_step_template",
+    "agent.templates.next_step_no_output_template",
+    "agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"
+  ]
+}

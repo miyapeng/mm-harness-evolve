@@ -1,0 +1,17 @@
+{
+  "benchmark": "browsecomp_v3",
+  "adapter": {
+    "transport": "command",
+    "status": "source_integrated",
+    "commands": {
+      "prepare": null,
+      "execute": null,
+      "score": null,
+      "cleanup": null
+    }
+  },
+  "protocol": {
+    "development_approved": false,
+    "reference_answers_visible": false
+  }
+}

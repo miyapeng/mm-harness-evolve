@@ -1,0 +1,19 @@
+{
+  "benchmark": "design2code",
+  "adapter": {
+    "browsers_path": "/data/miyapeng/mmcode/MultimodalCode/.runtime/research/playwright",
+    "cache_root": "/data/miyapeng/mmcode/mm-harness-evolve/runs/cache",
+    "dataset_file": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/data.jsonl",
+    "driver": "/data/miyapeng/miniconda3/envs/mmcode/lib/python3.10/site-packages/playwright/driver/package",
+    "eval_python": "/data/miyapeng/miniconda3/envs/mmcode/bin/python",
+    "evaluator_root": "/data/miyapeng/mmcode/mm-harness-evolve/third_party/MultimodalCode/evaluate/design2code",
+    "legacy_src": "/data/miyapeng/mmcode/mm-harness-evolve/third_party/MultimodalCode/src",
+    "max_model_calls": 2,
+    "node": "/data/miyapeng/miniconda3/envs/mmcode/lib/python3.10/site-packages/playwright/driver/node",
+    "placeholder": "/data/miyapeng/mmcode/mm-harness-evolve/third_party/MultimodalCode/evaluate/design2code/Design2Code/prompting/rick.jpg",
+    "renderer": "/data/miyapeng/mmcode/mm-harness-evolve/third_party/MultimodalCode/scripts/render_playwright.js",
+    "seed": 20260909,
+    "success_threshold": 0.8,
+    "timeout_seconds": 480
+  }
+}

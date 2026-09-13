@@ -1,0 +1,12 @@
+{
+  "seed": 20260909,
+  "max_images": 8,
+  "optimization_target": 1.0,
+  "selection": {
+    "min_gain": 0.0,
+    "max_regressions": 0,
+    "max_token_ratio": 2.5,
+    "success_threshold": 0.75
+  },
+  "evolver_runtime": "bounded_multimodal_http"
+}

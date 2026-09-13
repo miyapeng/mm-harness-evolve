@@ -1,0 +1,12 @@
+[
+  {
+    "patch": "/data/miyapeng/mmcode/mm-harness-evolve/experiments/results/design2code-smoke/design2code-text-smoke-v1.patch",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "patch": "/data/miyapeng/mmcode/mm-harness-evolve/experiments/results/design2code-smoke/design2code-mm-smoke-v3.patch",
+    "returncode": 0,
+    "stderr": ""
+  }
+]

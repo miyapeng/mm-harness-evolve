@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mm-harness-evolve"
+version = "0.1.0"
+description = "Reproducible multimodal task-harness evolution with frozen models"
+requires-python = ">=3.12"
+dependencies = ["PyYAML>=6,<7", "jsonschema>=4,<5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "Pillow>=10"]
+media = ["Pillow>=10"]
+evolver = ["claude-agent-sdk==0.1.39"]
+
+[project.scripts]
+mm-harness = "mm_harness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"mm_harness._vendor.meta_harness" = ["LICENSE", "SOURCE.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["benchmarks/*/upstream", "src/mm_harness/_vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# The legacy scorer requires pkg_resources compatibility before importing CLIP.
+"archive/benchmarks/design2code/score_worker.py" = ["E402"]
+
+# Import the digest-pinned evaluator before its installed distribution.
+"benchmarks/swe_mm/score_worker.py" = ["E402"]

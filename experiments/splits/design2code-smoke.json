@@ -1,0 +1,62 @@
+[
+  {
+    "benchmark": "design2code",
+    "group": "ecommercenews",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_0.png",
+      "image_sha256": "69e20bf94ee02712018c278a7cc5d3f533321297f0ebd619ea325766d0f3a9e4"
+    },
+    "split": "exploration",
+    "task_id": "0"
+  },
+  {
+    "benchmark": "design2code",
+    "group": "glycofragwork",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_1.png",
+      "image_sha256": "db04f38a911df2e0b76f40442ade024595047b883a830763432868e69b180861"
+    },
+    "split": "exploration",
+    "task_id": "1"
+  },
+  {
+    "benchmark": "design2code",
+    "group": "offshore-electrics",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_3.png",
+      "image_sha256": "816e053187b3cc4e21433c25050851c101e81171039e4b061a560696c66570a3"
+    },
+    "split": "validation",
+    "task_id": "3"
+  },
+  {
+    "benchmark": "design2code",
+    "group": "producer-application",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_4.png",
+      "image_sha256": "083dfa3f6ae4004f3da11de3e9ba3c34d336df9f843037fb5900c9db2f7a29d9"
+    },
+    "split": "validation",
+    "task_id": "4"
+  },
+  {
+    "benchmark": "design2code",
+    "group": "pillars",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_5.png",
+      "image_sha256": "df8980d3ec40ad05f931b74e615652cb260f6e9b450370becabc54bf89ec696e"
+    },
+    "split": "test",
+    "task_id": "5"
+  },
+  {
+    "benchmark": "design2code",
+    "group": "item-6-unresolved",
+    "payload": {
+      "image": "/data/miyapeng/mmcode/MultimodalCode/data/design2code/images/image_6.png",
+      "image_sha256": "baaf1190c3a6daa8d6d37c648cfa1a8b0b34c83717cea94875eb187179e1e19a"
+    },
+    "split": "test",
+    "task_id": "6"
+  }
+]

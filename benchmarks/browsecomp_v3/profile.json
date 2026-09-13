@@ -1,0 +1,33 @@
+{
+  "benchmark": "browsecomp_v3",
+  "status": "source_integrated",
+  "transport": "command",
+  "upstream": {
+    "url": "https://github.com/Halcyon-Zhang/BrowseComp-V3",
+    "commit": "8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+    "path": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+    "archive_sha256": "792c980e8cdf38eba20eff325645ecff757e482c758b8849165b01edc546841c",
+    "local_changes": "none; pinned official archive; never executed during integration",
+    "integration": "source_integrated; static discovery only, no rollout or scorer validation"
+  },
+  "protocol": {
+    "agent_input": [
+      "question images",
+      "retrieved public web/image evidence"
+    ],
+    "evaluator_only": [
+      "answer",
+      "sub_goals",
+      "grading metadata/reference evidence"
+    ],
+    "reference_answers_visible": false
+  },
+  "commands": {
+    "prepare": null,
+    "execute": null,
+    "score": null,
+    "cleanup": null
+  },
+  "timeout_seconds": 1800,
+  "score_timeout_seconds": 600
+}

@@ -1,0 +1,64 @@
+{
+  "name": "swe-mm-dev-mini-swe-agent-upstream",
+  "dataset": {
+    "name": "SWE-bench/SWE-bench_Multimodal",
+    "split": "dev",
+    "revision": "3548373bb5f604b55600884af34ac33e5a90ef66",
+    "instances": 102
+  },
+  "scaffold": {
+    "name": "mini-swe-agent",
+    "commit": "a83fcae82d2a08f0ee0c688f9d137b3566c097f8",
+    "config": "scaffolds/mini_swe_agent/src/minisweagent/config/benchmarks/swebench.yaml",
+    "profile": "swebench-official",
+    "tool_mode": "native",
+    "step_limit": 250,
+    "cost_limit_usd": 3.0,
+    "command_timeout_seconds": 60,
+    "wall_time_limit_seconds": 0,
+    "model_kwargs_from_upstream": {
+      "drop_params": true,
+      "parallel_tool_calls": true
+    }
+  },
+  "evaluation": {
+    "source": "evaluate/swe_mm/upstream",
+    "commit": "7e578260da58400f307e435e43d1d2ab29d686f6",
+    "version": "5.0.0rc0",
+    "test_timeout_seconds": 1800,
+    "resolved_requires": "all FAIL_TO_PASS and all PASS_TO_PASS tests pass"
+  },
+  "transport": {
+    "upstream": "one Docker instance image per case",
+    "clusterx": "the digest-matched instance image is the outer CPU-only task container",
+    "workspace": "/testbed"
+  },
+  "runtime": {
+    "snapshot": "runs/swe_mm_official/runtime-20260813d",
+    "controller_state": "runs/swe_mm_official/clusterx_state_runtime-20260813d.json",
+    "job_suffix": "s2",
+    "immutable_after_submission": true
+  },
+  "models": [
+    {
+      "key": "q35",
+      "model": "Qwen3.5-9B",
+      "server_run": "qwen35-9b-swe-262k",
+      "tool_call_parser": "qwen3_xml",
+      "tensor_parallel_size": 2,
+      "max_model_len": 262144,
+      "sampling": "model generation_config defaults (upstream mini config does not override sampling)",
+      "run_label": "qwen35-9b-mini-official-dev-s2"
+    },
+    {
+      "key": "q3vl30",
+      "model": "Qwen3-VL-30B-A3B",
+      "server_run": "qwen3vl-30b-swe-262k",
+      "tool_call_parser": "hermes",
+      "tensor_parallel_size": 2,
+      "max_model_len": 262144,
+      "sampling": "model generation_config defaults (upstream mini config does not override sampling)",
+      "run_label": "qwen3vl30-mini-official-dev-s2"
+    }
+  ]
+}

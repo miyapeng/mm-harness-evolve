@@ -1,0 +1,19 @@
+{
+  "dataset_id": "claw-eval/Claw-Eval",
+  "mirror": "https://modelscope.cn/datasets/claw-eval/Claw-Eval",
+  "revision": "1a4a1bce4ccd4f97c9eb326ddbbbedaa2331da40",
+  "upstream_primary": "https://huggingface.co/datasets/claw-eval/Claw-Eval",
+  "files": {
+    "data/fixtures.tar.gz": {
+      "sha256": "01c349b8eb3ae8bcd741578d6a7f94ba3f76e0aad74bd98233e02e629e65ff5b",
+      "size_bytes": 2879916129
+    },
+    "data/multimodal-00000-of-00001.parquet": {
+      "sha256": "ac9920c58f50d2949925e6ca459d0ccab4894dd27e16c90d5aaf52cf5a2026d3",
+      "size_bytes": 32411
+    }
+  },
+  "scope": "The fixture archive covers all 300 upstream tasks; experiments select the 101-row multimodal parquet split.",
+  "retrieved_at": "2026-09-09",
+  "retrieval_status": "downloaded_and_verified; 101-task multimodal tree materialized"
+}

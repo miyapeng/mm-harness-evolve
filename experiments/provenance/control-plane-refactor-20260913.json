@@ -1,0 +1,530 @@
+{
+  "base_commit": "238bd70",
+  "changed_files": [
+    "AGENTS.md",
+    "README.md",
+    "benchmarks/agentic_vbench/README.md",
+    "benchmarks/agentic_vbench/__init__.py",
+    "benchmarks/agentic_vbench/adapter.py",
+    "benchmarks/agentic_vbench/discovery.py",
+    "benchmarks/agentic_vbench/mechanism-profile.json",
+    "benchmarks/agentic_vbench/mutation-boundary.json",
+    "benchmarks/agentic_vbench/profile.json",
+    "benchmarks/agentic_vbench/upstream/SOURCE.json",
+    "benchmarks/browsecomp_v3/README.md",
+    "benchmarks/browsecomp_v3/__init__.py",
+    "benchmarks/browsecomp_v3/adapter.py",
+    "benchmarks/browsecomp_v3/discovery.py",
+    "benchmarks/browsecomp_v3/mechanism-profile.json",
+    "benchmarks/browsecomp_v3/mutation-boundary.json",
+    "benchmarks/browsecomp_v3/profile.json",
+    "benchmarks/browsecomp_v3/upstream/SOURCE.json",
+    "benchmarks/chartmimic/README.md",
+    "benchmarks/chartmimic/mechanism-profile.json",
+    "benchmarks/chartmimic/mutation-boundary.json",
+    "benchmarks/claw_eval_mm/README.md",
+    "benchmarks/claw_eval_mm/mechanism-profile.json",
+    "benchmarks/claw_eval_mm/mutation-boundary.json",
+    "benchmarks/design2code/README.md",
+    "benchmarks/design2code/mechanism-profile.json",
+    "benchmarks/design2code/mutation-boundary.json",
+    "benchmarks/gamedevbench/README.md",
+    "benchmarks/gamedevbench/mechanism-profile.json",
+    "benchmarks/gamedevbench/mutation-boundary.json",
+    "benchmarks/osworld_verified/README.md",
+    "benchmarks/osworld_verified/mechanism-profile.json",
+    "benchmarks/osworld_verified/mutation-boundary.json",
+    "benchmarks/swe_mm/README.md",
+    "benchmarks/swe_mm/cluster_runner.py",
+    "benchmarks/swe_mm/mechanism-profile.json",
+    "benchmarks/swe_mm/mutation-boundary.json",
+    "benchmarks/vision2web/README.md",
+    "benchmarks/vision2web/mechanism-profile.json",
+    "benchmarks/vision2web/mutation-boundary.json",
+    "benchmarks/visualwebarena/README.md",
+    "benchmarks/visualwebarena/mechanism-profile.json",
+    "benchmarks/visualwebarena/mutation-boundary.json",
+    "configs/benchmarks/agentic_vbench.json",
+    "configs/benchmarks/browsecomp_v3.json",
+    "configs/evolution/swe-mm-mechanism-pilot.json",
+    "configs/models/qwen38-mechanism-pilot.json",
+    "configs/prompts/mechanism-evolver-v1.txt",
+    "docs/PROJECT.md",
+    "experiments/provenance/control-plane-refactor-20260913.json",
+    "scripts/bootstrap_sources.py",
+    "scripts/prepare_swe_pilot.py",
+    "src/mm_harness/cli.py",
+    "src/mm_harness/core/benchmark_profiles.py",
+    "src/mm_harness/core/benchmarks.py",
+    "src/mm_harness/core/mechanisms.py",
+    "src/mm_harness/core/media_artifacts.py",
+    "src/mm_harness/core/observability.py",
+    "src/mm_harness/evolution/history.py",
+    "src/mm_harness/evolution/mechanism_review.py",
+    "src/mm_harness/evolution/media_workspace.py",
+    "src/mm_harness/evolution/minibatch.py",
+    "src/mm_harness/evolution/mutation_boundary.py",
+    "src/mm_harness/evolution/mutation_policy.py",
+    "src/mm_harness/evolution/rollout_workspace.py",
+    "src/mm_harness/evolution/source_proposer.py",
+    "src/mm_harness/runtimes/audit_proxy.py",
+    "src/mm_harness/runtimes/claude_code.py",
+    "src/mm_harness/runtimes/media_audit.py",
+    "src/mm_harness/runtimes/messages_proxy.py",
+    "tests/test_benchmark_bridges.py",
+    "tests/test_messages_proxy.py",
+    "tests/test_multimodal_control_plane.py",
+    "tests/test_new_benchmark_sources.py",
+    "third_party/lock.json"
+  ],
+  "constraints": {
+    "benchmark_rollout_started": false,
+    "clusterx_started": false,
+    "frozen_run_rewritten": false,
+    "gpu_started": false,
+    "model_started": false,
+    "official_scorer_modified": false
+  },
+  "date": "2026-09-13",
+  "deletions": [],
+  "design_conflicts": [
+    "legacy categories cannot infer scope",
+    "media content hash cannot infer observation identity or freshness",
+    "SWE exporter request/tool records not interleaved in event order",
+    "AgenticVBench launcher does not contain its Harbor A runtime",
+    "BrowseComp shared env mixes provider/budget and loop, so mutation remains disabled",
+    "BrowseComp source licensing needs clarification",
+    "SWE environment score failure and answer contamination remain historical facts"
+  ],
+  "historical_runs_audit": {
+    "changed_files": [],
+    "comparison": "relative path, byte size and mtime_ns before/after; not a full byte-hash sweep",
+    "files": 15674,
+    "legacy_proposals_loaded": [
+      {
+        "path": "runs/history-search-text-20260912/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-final/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/design2code-text-smoke-v1/sessions/a9fe49f0b455afbbbe57c97c08dfd76e8870b3383b36bf85acea84072daf4aef/proposal.json",
+        "sha256": "0c2cd7380d4cf0aa63fce2de681df94a887fb39bf80db231b69a257401ff1984",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-claude-transport-20260912-v2/workspace/proposal.json",
+        "sha256": "ca2a8a3d2201025b66a68fa6d39ad3bdfe53bc65f6f445a4ce59ce432aa921f3",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/workspace-meta-harness-transport-20260912/workspace/proposal.json",
+        "sha256": "ca2a8a3d2201025b66a68fa6d39ad3bdfe53bc65f6f445a4ce59ce432aa921f3",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v2/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/design2code-mm-smoke-v3/sessions/10b8fdf5c4a8c7bdeb19af6a102bf260c6311cb98757542a806256c36e28bf0f/proposal.json",
+        "sha256": "a9b1bb8b676be404e74dc40af25f88b9eb0b272ca5a204e04f47575b5f95ea4c",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-final/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-mm-20260912-v3/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/history/round-002/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-001/proposal/workspace/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-001/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-000/proposal/workspace/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-002/proposal/workspace/proposal.json",
+        "sha256": "19045b7b8081b847d7d3a4a9828ce9b1f999d55c88d70422b7657d5da60f9713",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-002/proposal/workspace/history/round-001/proposal.json",
+        "sha256": "68eb5f50be3a222fccac906e363d7947b8a12404276ea0c817e2474ca8382094",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/history-search-text-20260912-v3/search/rounds/round-002/proposal/workspace/history/round-000/proposal.json",
+        "sha256": "1eeecf1f05ded12f4f7b794cbefee458a422904ca164ce3b9ae242d6cff07041",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/q38-real-claude-probe-0913-b/workspace/proposal.json",
+        "sha256": "c8e5fc8ba0c4bc4b506b8777ee7c47e1ccc48d206b752914dbb4093f3054a3fe",
+        "taxonomy": "legacy_taxonomy"
+      },
+      {
+        "path": "runs/claude-fixed-transport-v2/workspace/proposal.json",
+        "sha256": "ca2a8a3d2201025b66a68fa6d39ad3bdfe53bc65f6f445a4ce59ce432aa921f3",
+        "taxonomy": "legacy_taxonomy"
+      }
+    ],
+    "metadata_manifest_sha256": "caf41b7d26e9eff80266ddbeb8e7c86796d7657dcfa31b6ec9c5772bba323564",
+    "swe_h0_verified_files": 413,
+    "swe_h0_verified_id": "486d6062eb0478bd49507a4b5e3198e3b0c83000e50e5de2087ecbf889255e0a",
+    "legacy_proposal_count_note": "File reads include copied archives and fixtures; not a count of independent real candidates."
+  },
+  "new_sources": {
+    "AgenticVBench": {
+      "archive_sha256": "6cf159c2ab851abbb8567d12e4c232e4403cf20f9e4f4e6469a0260df5914d1a",
+      "commit": "6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+      "integration": "source_integrated; static discovery only, no rollout or scorer validation",
+      "local_changes": "none; pinned official archive; never executed during integration",
+      "path": "third_party/AgenticVBench-6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+      "url": "https://github.com/PhiloLabs/agentic-vbench"
+    },
+    "BrowseComp-V3": {
+      "archive_sha256": "792c980e8cdf38eba20eff325645ecff757e482c758b8849165b01edc546841c",
+      "commit": "8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+      "integration": "source_integrated; static discovery only, no rollout or scorer validation",
+      "local_changes": "none; pinned official archive; never executed during integration",
+      "path": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+      "url": "https://github.com/Halcyon-Zhang/BrowseComp-V3"
+    }
+  },
+  "retained_legacy_assets": [
+    "configs/evolution/harness-mechanisms-v1.json",
+    "benchmarks/swe_mm/mutation-map-v2.json",
+    "configs/evolution/swe-mm-pilot.json",
+    "configs/models/qwen38-pilot.json",
+    "old prompt versions and policy readers",
+    "all original benchmark adapter packages",
+    "all runs and frozen data"
+  ],
+  "static_discovery": {
+    "agentic_vbench": {
+      "default": 100,
+      "families": {
+        "assembly": 18,
+        "repair": 18,
+        "repurpose": 36,
+        "sequencing": 28
+      },
+      "including_extra_understanding": 124
+    },
+    "browsecomp_v3": {
+      "actual_dataset_downloaded": false,
+      "decrypted_schema_test": "synthetic fixtures; answer/subgoals omitted",
+      "independent_development_split": "unconfirmed despite train.jsonl filename"
+    }
+  },
+  "status": "local_refactor_validated_no_real_rollouts",
+  "tests": {
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest -q",
+    "lint": "ruff check src scripts benchmarks tests passed",
+    "status": "passed",
+    "passed": 140,
+    "new_research_cases": 34,
+    "seconds": 8.99,
+    "uses_real_models": false,
+    "benchmark_rollouts": false,
+    "format": "31 changed/new Python files pass ruff format --check"
+  },
+  "unverified": [
+    "real MechanismPatch B/A/E/V loop",
+    "stage-specific freshness/grounding/verification instrumentation in full benchmark runtimes",
+    "video/audio consumption by fixed B backend",
+    "new benchmark execute/score commands",
+    "legal independent development pools outside SWE",
+    "semantic invariants for arbitrary shared Python mutations",
+    "new efficacy/transfer/ablation results"
+  ],
+  "checks": {
+    "registry_active": 6,
+    "registry_total": 10,
+    "local_document_links": "passed",
+    "mapped_upstream_paths": "passed (extension points excluded)",
+    "A_and_provider_config_unchanged": true,
+    "E_V_gates_and_sizes_unchanged": true,
+    "git_diff_check": "passed"
+  },
+  "implementation_commit": "ba7c94e1eadb0661c6640779e480912bcd4e0d9f"
+}

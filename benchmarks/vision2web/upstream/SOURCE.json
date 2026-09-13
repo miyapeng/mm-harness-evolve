@@ -1,0 +1,20 @@
+{
+  "source": "https://github.com/zai-org/Vision2Web.git",
+  "commit": "577f9397b3db8fc6d828adde254a830caa65d515",
+  "path": "third_party/Vision2Web-577f9397b3db8fc6d828adde254a830caa65d515",
+  "files": {
+    "vision2web/inference/engine.py": "9bb066b186d704349636752f6dd33677016a4ce7ef09ba564bbffab2a46c635e",
+    "vision2web/inference/prompts.py": "1471e85dda7c21c2e91445c7df8a8fcd2d40401521165caaa72b26f1ccbd19a9",
+    "vision2web/inference/adapters/openhands.py": "6f4bdcae6b94d51c346754c3990c0e61e42a28ab1db3c384d8a98fde369e2a70",
+    "vision2web/core/config.py": "9252e15f8677f5c3a71c72bc6d4559dcb45f78bc428a8c4dbd00cd6123b23601",
+    "vision2web/core/sandbox.py": "ce5bc288291477adc61a229211321009e71cbe718e43357797ebf18050f3e1b9",
+    "docker/Dockerfile.sandbox": "aac632c5d1700471bd1eb81090e6025ea84a17de91b789577373fed5d9311ef9",
+    "README.md": "d3753785f4864c2c027ee34fbdad057beaa2b1e5ad3f36fb5630dddb4e061a1e"
+  },
+  "copied_files": [
+    "vision2web/inference/prompts.py",
+    "vision2web/inference/adapters/openhands.py",
+    "README.md"
+  ],
+  "modifications": []
+}

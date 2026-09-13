@@ -1,0 +1,19 @@
+{
+  "source": "https://github.com/SWE-agent/SWE-agent",
+  "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+  "path": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+  "files": {
+    "config/default_mm_with_images.yaml": "2e5887bd1646a30216fec7efadaa2a79bf4d1a0f5262548f664e7a56a6125b23",
+    "sweagent/agent/agents.py": "d6cdf7ac66a6509ceba08e3541b856f0734acf79f9a485ed8a6e2c72f0d211a8",
+    "sweagent/agent/history_processors.py": "8e3621a9b7d94761d184c57dc2ab1028f7eb04b01fdfcbe8ba122977d19e477a",
+    "sweagent/agent/problem_statement.py": "8c1c87a35acfccdf9efb0563415120feb847058b19e738eb152cd10fe5385a40",
+    "sweagent/run/batch_instances.py": "baf375fc3cf05484ebbd385d688e22c1713f466294579ba4e2d628638f1ad0a3",
+    "sweagent/agent/models.py": "91a8cb62703d7db656b0e615811ff0b9eedd51cd3ea89a6eeb2393f1d35c6cce",
+    "LICENSE": "7610ed3916f6674e34b78417894abd57ff538b3cfdda3085e3643d82acbaf31f"
+  },
+  "copied_files": [
+    "config/default_mm_with_images.yaml",
+    "LICENSE"
+  ],
+  "modifications": []
+}

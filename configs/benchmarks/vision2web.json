@@ -1,0 +1,47 @@
+{
+  "benchmark": "vision2web",
+  "adapter": {
+    "benchmark": "vision2web",
+    "status": "native_cli_verified; evolution_worker_unwired",
+    "transport": "command",
+    "upstream": {
+      "url": "https://github.com/zai-org/Vision2Web.git",
+      "commit": "577f9397b3db8fc6d828adde254a830caa65d515",
+      "path": "third_party/Vision2Web-577f9397b3db8fc6d828adde254a830caa65d515",
+      "archive_sha256": "64d102e1ebd3dc0271e5c31facea6ebf03f60d7467ecfe5c12a3b3516ee28d57",
+      "local_changes": "none; pinned official archive"
+    },
+    "starting_point": "official OpenHandsAdapter; later ClaudeCodeAdapter comparison",
+    "h0_status": "official source and native launcher integrated; rollout blocked on container environment",
+    "protocol": {
+      "agent_input": [
+        "prototypes",
+        "resources",
+        "released prompt.txt/prd.md"
+      ],
+      "evaluator_only": [
+        "workflow.json",
+        "reference screenshots for scoring"
+      ],
+      "group_key": "website/template"
+    },
+    "commands": {
+      "prepare": null,
+      "execute": null,
+      "score": null,
+      "cleanup": null
+    },
+    "evaluator": {
+      "source": "official with audited compatibility",
+      "vlm": "pin fixed judge separately"
+    },
+    "execution_components": {
+      "planner": "roles.executor"
+    },
+    "timeout_seconds": 1800,
+    "score_timeout_seconds": 600,
+    "official_h0_manifest": "benchmarks/vision2web/upstream/SOURCE.json",
+    "native_launcher": "benchmarks.vision2web.launch_h0",
+    "dataset_path": "data/vision2web/extracted"
+  }
+}

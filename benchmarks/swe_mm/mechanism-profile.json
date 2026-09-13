@@ -1,0 +1,49 @@
+{
+  "task_domain": "static multimodal issue repair; coding anchor",
+  "modalities": [
+    "image",
+    "rendered_artifact"
+  ],
+  "environment_type": "isolated repository/container + browser tools",
+  "initial_media_available": true,
+  "active_observation_available": true,
+  "interactive_environment": true,
+  "current_h0_harness": "Official SWE-agent@3ea751c087f32b16e039a2233dd6eefecef325d5 config/default_mm_with_images.yaml",
+  "current_h0_media_policy": "Issue images + ImageParsingHistoryProcessor; explicit image/browser tools; fixed GIF compatibility. Freshness policy not established by historical logs.",
+  "agent_visible_media": [
+    "issue images",
+    "runtime browser screenshots"
+  ],
+  "evaluator_only_media": [
+    "test fixtures and scoring-side reference assets"
+  ],
+  "development_data_status": "Official dev 102; existing group split E12/V4/internal reserve37/unused49; not a 60/40 repartition.",
+  "heldout_evaluation_status": "Official test reserved; no new frozen test evaluation.",
+  "known_generic_failure_evidence": [
+    "experiments/provenance/swe-native-worker-2026-09-13.json: E4 three timeouts, one formatting failure; diagnosis not established"
+  ],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "unknown",
+  "integration_status": "scoring_validated",
+  "integration_evidence": [
+    "experiments/provenance/swe-native-worker-2026-09-13.json",
+    "experiments/provenance/swe-native-stop-20260913.json"
+  ],
+  "limitations": [
+    "Single smoke scoring completed but positive control has live USGS timeout. Not reliable efficacy validation.",
+    "Historical Chart.js-11352 answer contamination.",
+    "Zero real candidate/evolution rounds; no confirmed MM failure."
+  ],
+  "source_lock": "SWE-agent",
+  "benchmark_id": "swe_mm",
+  "status": "active",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/swe_mm/mutation-boundary.json"
+}

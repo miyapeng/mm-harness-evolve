@@ -1,0 +1,10 @@
+{
+  "all_model_ids": [
+    "Qwen3.8-27B"
+  ],
+  "image_sent": true,
+  "image_sha256": "1349b0f07a16e6747ef1ee93a9c784646ea3c54ca70e319b9d7a137bdafb3c23",
+  "kind": "real_claude_code_with_scripted_API_not_model_inference",
+  "proposal_written": true,
+  "requests": 3
+}

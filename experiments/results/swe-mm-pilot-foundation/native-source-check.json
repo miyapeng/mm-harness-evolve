@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "rollout_executed": false,
+  "stderr": "05:34:19 - LiteLLM:WARNING: get_model_cost_map.py:454 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: [Errno -3] Temporary failure in name resolution. Falling back to local backup.\n",
+  "stdout": "\ud83d\udc4b INFO     This is SWE-agent version 1.1.0 (hash='unavailable') with SWE-ReX   \n            version 1.4.0 (rex_hash='unavailable').                             \n{\"status\": \"configuration_valid\", \"source\": \"/data/miyapeng/mmcode/mm-harness-evolve/runs/swe-mm-q38-source-check-v1/versions/H0/source\", \"task_id\": \"processing__p5.js-6069\", \"model\": \"openai/Qwen3.8-27B\", \"deployment\": \"local\", \"rollout_executed\": false}\n"
+}

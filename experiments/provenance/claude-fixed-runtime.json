@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-11",
+  "claude_agent_sdk": "0.1.39",
+  "claude_code": "2.1.49",
+  "binary_sha256": "e7a7565665ecbccca2c6912b2ef29da2b137d260201b931c737b7dd3821c6e2f",
+  "source": "claude-agent-sdk bundled CLI",
+  "integration": "src/mm_harness/runtimes/claude_code.py",
+  "upstream_reference": "third_party/meta-harness-main/reference_examples/terminal_bench_2/claude_wrapper.py",
+  "reference_commit": "44b9942127847f7421db70d8c7e48407f09a3c70",
+  "reuse": "independent implementation of subprocess/stream-json workflow; no external checkout imports",
+  "fixed_runtime_tools": [
+    "Read",
+    "Glob",
+    "Grep",
+    "Edit",
+    "Write",
+    "Bash"
+  ]
+}

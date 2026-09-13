@@ -1,0 +1,47 @@
+{
+  "scope": "real_Claude_CLI_scripted_API_not_Qwen_inference_or_benchmark",
+  "result": {
+    "all_model_ids": [
+      "Qwen3.8-27B"
+    ],
+    "image_sent": true,
+    "image_sha256": "1349b0f07a16e6747ef1ee93a9c784646ea3c54ca70e319b9d7a137bdafb3c23",
+    "kind": "real_claude_code_with_scripted_API_not_model_inference",
+    "proposal_written": true,
+    "requests": 3
+  },
+  "session_index": {
+    "actual_image_requests": "requests/ (Read alone is not proof of transmitted pixels)",
+    "directory": "/data/miyapeng/mmcode/mm-harness-evolve/runs/workspace-meta-harness-transport-20260912/claude/sessions/20260912_155319_evolver",
+    "files_read": {
+      "evidence/visual.png": {
+        "lines": 0,
+        "reads": 1
+      }
+    },
+    "files_written": {
+      "proposal.json": {
+        "lines_written": 2
+      }
+    },
+    "parser": "Meta-Harness@44b9942127847f7421db70d8c7e48407f09a3c70",
+    "reported_cli_cost_usd_unvalidated": 0.0014400000000000003
+  },
+  "upstream": {
+    "repository": "https://github.com/stanford-iris-lab/meta-harness",
+    "commit": "44b9942127847f7421db70d8c7e48407f09a3c70",
+    "upstream_path": "reference_examples/terminal_bench_2/claude_wrapper.py",
+    "sha256": "5ff005d6c1d2f8500b643f71432a9649fc425503f7fee2183df858a95b33de3e",
+    "license": "MIT",
+    "local_changes": "none",
+    "used_functions": [
+      "parse_stream_events",
+      "log_session"
+    ],
+    "unused": "run/build_command/skill loading are not invoked; fixed Qwen transport remains local",
+    "acquisition": "official git clone; detached checkout at pinned commit; vendored file byte-identical"
+  },
+  "tests": "28 passed; relevant unit/controller/workspace tests",
+  "workspace_preview": "runs/workspace-preview-20260912/workspace/WORKSPACE.md",
+  "preview_scope": "4 synthetic fixtures, not benchmark tasks"
+}

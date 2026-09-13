@@ -1,0 +1,84 @@
+{
+  "local_snapshot": {
+    "path": "third_party/MultimodalCode",
+    "source": "/data/miyapeng/mmcode/MultimodalCode",
+    "manifest_sha256": "cd6f1b5b317cfe6c7f741191f69d4b6ccb83b965b179f3db298a02829a8b8b2d",
+    "local_changes": "none; selected files copied byte-for-byte; generated caches and Git metadata excluded"
+  },
+  "upstreams": {
+    "Vision2Web": {
+      "url": "https://github.com/zai-org/Vision2Web.git",
+      "commit": "577f9397b3db8fc6d828adde254a830caa65d515",
+      "path": "third_party/Vision2Web-577f9397b3db8fc6d828adde254a830caa65d515",
+      "archive_sha256": "64d102e1ebd3dc0271e5c31facea6ebf03f60d7467ecfe5c12a3b3516ee28d57",
+      "local_changes": "none; pinned official archive"
+    },
+    "Design2Code": {
+      "url": "https://github.com/NoviScl/Design2Code.git",
+      "commit": "7a575e4c33f417c4be5c64072b8f5798de0d0f99"
+    },
+    "SWE-bench": {
+      "url": "https://github.com/SWE-bench/SWE-bench.git",
+      "commit": "7e578260da58400f307e435e43d1d2ab29d686f6",
+      "path": "third_party/SWE-bench-7e578260da58400f307e435e43d1d2ab29d686f6",
+      "archive_sha256": "a4a2aacfde24ac91b67c522bc747fedd024124503e526cc9d380642582b0fb56",
+      "local_changes": "none; pinned official archive"
+    },
+    "ChartMimic": {
+      "url": "https://github.com/ChartMimic/ChartMimic.git",
+      "commit": "92ba5b97b908c607f630c3ffbb5043de9de62b76"
+    },
+    "AutoSaddler": {
+      "url": "https://github.com/microsoft/AutoSaddler",
+      "commit": "30e20ce004486c58e7ee97c66182a8d0d41ec90e",
+      "path": "third_party/AutoSaddler-main",
+      "archive_sha256": "8f1846d7e062fdf8632c0b6571d06c44ae7a989c1ca99d16edca8666e99ff91b",
+      "license": "MIT",
+      "local_changes": "none; pinned archive matches main archive byte-for-byte",
+      "paper_implementation": "src/autosaddler/v1",
+      "integration": "src/autosaddler/v2"
+    },
+    "Meta-Harness": {
+      "url": "https://github.com/stanford-iris-lab/meta-harness",
+      "commit": "44b9942127847f7421db70d8c7e48407f09a3c70",
+      "path": "third_party/meta-harness-main",
+      "archive_sha256": "c891604720e6d546a7db7a59141aeb3c495f2e1143e4af19dfadde1b7f1ca6a5",
+      "local_changes": "none; all files verified against exact commit archive",
+      "integration": "reference only; not imported by runtime"
+    },
+    "Claw-Eval": {
+      "url": "https://github.com/claw-eval/claw-eval",
+      "commit": "5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+      "path": "third_party/claw-eval-5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+      "archive_sha256": "dcd009657da238a0b2b20b90606a61f2d1197a2810e190c9c7431f66c8caab97",
+      "license": "MIT",
+      "local_changes": "none; official pinned commit archive",
+      "integration": "official multimodal task harness; command bridge framework only"
+    },
+    "SWE-agent": {
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "archive_sha256": "a02724577cde3c7033343efff74184ad33ca783b9f3b81bea90c13f4c47219a4",
+      "license": "MIT",
+      "local_changes": "none; pinned official archive",
+      "integration": "official H0 source/config and native CLI integrated; Docker rollout not yet verified"
+    },
+    "AgenticVBench": {
+      "url": "https://github.com/PhiloLabs/agentic-vbench",
+      "commit": "6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+      "path": "third_party/AgenticVBench-6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+      "archive_sha256": "6cf159c2ab851abbb8567d12e4c232e4403cf20f9e4f4e6469a0260df5914d1a",
+      "local_changes": "none; pinned official archive; never executed during integration",
+      "integration": "source_integrated; static discovery only, no rollout or scorer validation"
+    },
+    "BrowseComp-V3": {
+      "url": "https://github.com/Halcyon-Zhang/BrowseComp-V3",
+      "commit": "8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+      "path": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+      "archive_sha256": "792c980e8cdf38eba20eff325645ecff757e482c758b8849165b01edc546841c",
+      "local_changes": "none; pinned official archive; never executed during integration",
+      "integration": "source_integrated; static discovery only, no rollout or scorer validation"
+    }
+  }
+}

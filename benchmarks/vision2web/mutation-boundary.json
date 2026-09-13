@@ -1,0 +1,64 @@
+{
+  "schema": 3,
+  "benchmark": "vision2web",
+  "mutable": [],
+  "fixed": {
+    "evaluator": [
+      "scorer/",
+      "evaluator/",
+      "evaluation/",
+      "tests/",
+      "**/steps/*/tests/**",
+      "**/judge*",
+      "vision2web/evaluation/"
+    ],
+    "ground_truth": [
+      "data/",
+      "tasks/",
+      "solutions/",
+      "oracle/",
+      "ground_truth/"
+    ],
+    "environment": [
+      "environment/",
+      "docker/",
+      "**/Dockerfile",
+      "**/install.sh"
+    ],
+    "model_provider": [
+      "models/",
+      "providers/",
+      "configs/models/"
+    ],
+    "outer_controller": [
+      "mm_harness/",
+      "scripts/"
+    ]
+  },
+  "stage_locations": {
+    "acquire": [],
+    "transform": [],
+    "persist": [],
+    "route": [],
+    "ground": [],
+    "verify": []
+  },
+  "generic_source": [
+    {
+      "source_root": "third_party/Vision2Web-577f9397b3db8fc6d828adde254a830caa65d515",
+      "path": "vision2web/inference/adapters/openhands.py",
+      "status": "located_not_enabled"
+    }
+  ],
+  "unlocated_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "limitations": [
+    "Research applicability does not establish a mutable runtime location; unlocated stages are not enabled."
+  ]
+}

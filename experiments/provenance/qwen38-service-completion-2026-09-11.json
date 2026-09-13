@@ -1,0 +1,41 @@
+{
+  "job_id": "mmhe-q38-2gpu-0911-a",
+  "allocated_gpus": 2,
+  "start_time": "2026-09-11T08:06:23Z",
+  "end_time": "2026-09-11T14:13:13Z",
+  "api_state": "COMPLETED",
+  "cli_state": "SUCCEEDED",
+  "exit_reason": "Six-hour service lease expired",
+  "resources_released": true,
+  "manual_stop_issued": false,
+  "probe": {
+    "image_sha256": "eb0958cb60fdd037bdb57d96e87259ab2e0bcd035812bd8830fbafa4bb2d4c3b",
+    "model": "Qwen3.8-27B",
+    "results": {
+      "anthropic": {
+        "answer": " red, blue",
+        "correct": true,
+        "seconds": 0.16565203201025724,
+        "usage": {
+          "input_tokens": 107,
+          "output_tokens": 4
+        }
+      },
+      "openai": {
+        "answer": " red, blue",
+        "correct": true,
+        "seconds": 1.2145120790228248,
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 107,
+          "prompt_tokens_details": null,
+          "total_tokens": 111
+        }
+      }
+    },
+    "scope": "real_model_image_protocol_probe_not_SWE_rollout",
+    "service_ready_sha256": "05e95d80a9fefcc7e789e95631c79378a38f2579e1a695355559e8a87a843cbc"
+  },
+  "swe_rollout_completed": false,
+  "evidence_directory": "runs/services/mmhe-q38-2gpu-0911-a"
+}

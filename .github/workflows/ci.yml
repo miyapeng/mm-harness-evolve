@@ -1,0 +1,15 @@
+name: research-contracts
+on: [push, pull_request]
+jobs:
+  interfaces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/bootstrap_sources.py
+      - run: python -m pip install -e '.[dev]'
+      - run: ruff check --config pyproject.toml src benchmarks archive scripts tests experiments/*.py
+      - run: ruff format --check --config pyproject.toml src benchmarks archive scripts tests experiments/*.py
+      - run: PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q

@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "id": "swe-mm-generic-mechanism-map-v2",
+  "benchmark": "swe_mm",
+  "taxonomy": "configs/evolution/harness-mechanisms-v1.json",
+  "yaml_file": "config/default_mm_with_images.yaml",
+  "categories": {
+    "prompt_context": {
+      "files": [
+        "sweagent/agent/agents.py",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [
+        "agent.templates.system_template",
+        "agent.templates.instance_template",
+        "agent.templates.next_step_template",
+        "agent.templates.next_step_no_output_template"
+      ],
+      "entry_points": [
+        "TemplateConfig",
+        "DefaultAgent message construction"
+      ]
+    },
+    "visual_observation": {
+      "files": [
+        "sweagent/agent/agents.py",
+        "tools/image_tools/bin/",
+        "tools/image_tools/config.yaml",
+        "tools/web_browser/bin/screenshot_site",
+        "tools/web_browser/lib/",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [],
+      "entry_points": [
+        "DefaultAgent action/observation loop",
+        "view_image",
+        "screenshot_site",
+        "browser_manager"
+      ]
+    },
+    "history_memory": {
+      "files": [
+        "sweagent/agent/history_processors.py",
+        "sweagent/agent/agents.py",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [
+        "agent.history_processors"
+      ],
+      "entry_points": [
+        "HistoryProcessor implementations",
+        "DefaultAgent history construction"
+      ]
+    },
+    "tool_orchestration": {
+      "files": [
+        "sweagent/agent/agents.py",
+        "sweagent/tools/parsing.py",
+        "sweagent/tools/commands.py",
+        "tools/web_browser/bin/",
+        "tools/web_browser/lib/",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [],
+      "entry_points": [
+        "DefaultAgent tool call flow",
+        "existing browser command wrappers",
+        "action/output parsing"
+      ]
+    },
+    "retry_stop": {
+      "files": [
+        "sweagent/agent/agents.py",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [],
+      "entry_points": [
+        "DefaultAgent step/run recovery and termination",
+        "existing retry control; hard limits remain fixed"
+      ]
+    },
+    "internal_verification": {
+      "files": [
+        "sweagent/agent/agents.py",
+        "tools/review_on_submit_m/bin/submit",
+        "sweagent/agent/harness_extensions/"
+      ],
+      "yaml_paths": [
+        "agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"
+      ],
+      "entry_points": [
+        "submission review wrapper",
+        "DefaultAgent verification triggers"
+      ]
+    }
+  },
+  "fixed_source_examples": [
+    "sweagent/agent/models.py",
+    "sweagent/agent/problem_statement.py",
+    "sweagent/environment/",
+    "sweagent/run/",
+    "sweagent/tools/tools.py",
+    "tools/*/install.sh",
+    "pyproject.toml"
+  ],
+  "contracts": [
+    "preserve model transport and total budget checks even in shared files",
+    "keep canonical task inputs and official results outside mutation",
+    "new wrappers compose existing permissions, not new capabilities",
+    "preserve actual request/trajectory/cost recording",
+    "preserve required task/workspace/observation/diff template inputs",
+    "maintain upstream public interfaces or provide compatible wrappers"
+  ],
+  "enforcement_limit": "File/YAML checks and change-map validation establish scope, not semantic correctness or a sandbox for arbitrary Python. Shared-file budget/recording contracts require runtime checks; the real SWE worker remains unfinished.",
+  "preserve_template_inputs": [
+    "agent.templates.system_template",
+    "agent.templates.instance_template",
+    "agent.templates.next_step_template",
+    "agent.templates.next_step_no_output_template",
+    "agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"
+  ]
+}

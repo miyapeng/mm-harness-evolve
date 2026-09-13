@@ -1,0 +1,1 @@
+"""Benchmark-owned integration boundary."""

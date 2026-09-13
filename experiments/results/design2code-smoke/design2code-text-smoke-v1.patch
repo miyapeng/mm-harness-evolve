@@ -1,0 +1,9 @@
+--- a/prompt.txt
++++ b/prompt.txt
+@@ -7,3 +7,5 @@
+ Do not hallucinate any dependencies to external files. You do not need to include JavaScript scripts for dynamic interactions.
+ Pay attention to things like size, text, position, and color of all the elements, as well as the overall layout.
+ Respond with the content of the HTML+CSS file:
++
++If you are provided with a rendered image of your previous attempt, analyze it carefully against the original screenshot. Identify specific visual discrepancies (e.g., missing elements, incorrect colors, wrong spacing, misaligned grids). Generate a corrected HTML file that fixes these issues. Focus on pixel-perfect reproduction.
+\ No newline at end of file

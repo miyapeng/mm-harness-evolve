@@ -1,0 +1,19 @@
+{
+  "commit": "5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+  "source": "https://github.com/claw-eval/claw-eval",
+  "files": {
+    "config_multimodal.yaml": "9804ee2b3a445b87f6c16c7e7686490678ac254b31702d219ebf2478c0c1664f",
+    "LICENSE": "de168535d426a732793cbd51adfc6f22f110a9f4bb251c5590e92f297a69cdc1",
+    "src/claw_eval/cli.py": "41549a5159da9e4c1fde7a33d1a44b9d1e8c9077698e58089f481eacf7fc639f",
+    "src/claw_eval/config.py": "c8facfafcb3202e1fd8601c980d0db8daa67e6ca628ecad9675df78456262cf8",
+    "src/claw_eval/runner/loop.py": "1b5553e274e3a6794baddca2d26c6e8df59a7636619e603e93c6886334883e1a",
+    "src/claw_eval/runner/system_prompt.py": "8b5ff342154bc7ab495083b8e5cf44e8b0fac1a3c1e67e9a70707c811e1b593f",
+    "src/claw_eval/models/scoring.py": "b22ba9b92fec05b003c17669ab0b5f1be80f6d416c4547a3d7461c163e9a125a",
+    "src/claw_eval/models/trace.py": "b18264883ab3283dba772f989da17b16e8278fdef2f0815e68aa6c41cd2b1a61"
+  },
+  "copied_files": [
+    "config_multimodal.yaml",
+    "LICENSE"
+  ],
+  "modifications": []
+}

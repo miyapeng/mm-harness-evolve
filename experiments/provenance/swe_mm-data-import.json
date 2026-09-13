@@ -1,0 +1,11 @@
+{
+  "benchmark": "swe_mm",
+  "source": "/data/miyapeng/mmcode/MultimodalCode/data/swe_mm/dev",
+  "destination": "data/swe_mm/dev",
+  "transfer": "independent byte-verified copies, no symlinks",
+  "metadata": {},
+  "file_count": 606,
+  "manifest": "data/swe_mm/swe_mm-import.json",
+  "manifest_sha256": "6d3be63fc69ef4d2610ed00da45f4772a79ada9875879ce890f47879c2e9b867",
+  "bytes": 39476620
+}

@@ -1,0 +1,1 @@
+{"mode":"upstream_default","source":"config_multimodal.yaml","runner":"claw_eval.runner.loop:run_task","prompt_composer":"claw_eval.runner.system_prompt:build_system_prompt","task_tag":"multimodal","prompt_override":null}

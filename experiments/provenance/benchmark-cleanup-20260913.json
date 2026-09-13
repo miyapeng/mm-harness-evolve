@@ -1,0 +1,102 @@
+{
+  "moves": {
+    "benchmarks/design2code/README.md": "archive/benchmarks/design2code/README.md",
+    "benchmarks/design2code/__init__.py": "archive/benchmarks/design2code/__init__.py",
+    "benchmarks/design2code/adapter.py": "archive/benchmarks/design2code/adapter.py",
+    "benchmarks/design2code/h0/harness.py": "archive/benchmarks/design2code/h0/harness.py",
+    "benchmarks/design2code/h0/prompt.txt": "archive/benchmarks/design2code/h0/prompt.txt",
+    "benchmarks/design2code/mechanism-profile.json": "archive/benchmarks/design2code/mechanism-profile.json",
+    "benchmarks/design2code/mutation-boundary.json": "archive/benchmarks/design2code/mutation-boundary.json",
+    "benchmarks/design2code/profile.json": "archive/benchmarks/design2code/profile.json",
+    "benchmarks/design2code/score_worker.py": "archive/benchmarks/design2code/score_worker.py",
+    "benchmarks/design2code/worker.py": "archive/benchmarks/design2code/worker.py",
+    "configs/benchmarks/design2code.json": "archive/configs/benchmarks/design2code.json",
+    "benchmarks/claw_eval_mm/README.md": "archive/benchmarks/claw_eval_mm/README.md",
+    "benchmarks/claw_eval_mm/__init__.py": "archive/benchmarks/claw_eval_mm/__init__.py",
+    "benchmarks/claw_eval_mm/adapter.py": "archive/benchmarks/claw_eval_mm/adapter.py",
+    "benchmarks/claw_eval_mm/check_inputs.py": "archive/benchmarks/claw_eval_mm/check_inputs.py",
+    "benchmarks/claw_eval_mm/fetch_data.py": "archive/benchmarks/claw_eval_mm/fetch_data.py",
+    "benchmarks/claw_eval_mm/h0/harness.py": "archive/benchmarks/claw_eval_mm/h0/harness.py",
+    "benchmarks/claw_eval_mm/h0/prompt.txt": "archive/benchmarks/claw_eval_mm/h0/prompt.txt",
+    "benchmarks/claw_eval_mm/launch_h0.py": "archive/benchmarks/claw_eval_mm/launch_h0.py",
+    "benchmarks/claw_eval_mm/mechanism-profile.json": "archive/benchmarks/claw_eval_mm/mechanism-profile.json",
+    "benchmarks/claw_eval_mm/mutation-boundary.json": "archive/benchmarks/claw_eval_mm/mutation-boundary.json",
+    "benchmarks/claw_eval_mm/profile.json": "archive/benchmarks/claw_eval_mm/profile.json",
+    "configs/benchmarks/claw_eval_mm.json": "archive/configs/benchmarks/claw_eval_mm.json",
+    "configs/evolution/claw_eval_mm.json": "archive/configs/evolution/claw_eval_mm.json",
+    "scripts/prepare_design2code.py": "archive/scripts/prepare_design2code.py",
+    "scripts/probe_claude_vision.py": "archive/scripts/probe_claude_vision.py"
+  },
+  "deleted": [
+    "benchmarks/chartmimic/README.md",
+    "benchmarks/chartmimic/__init__.py",
+    "benchmarks/chartmimic/adapter.py",
+    "benchmarks/chartmimic/h0/harness.py",
+    "benchmarks/chartmimic/h0/prompt.txt",
+    "benchmarks/chartmimic/mechanism-profile.json",
+    "benchmarks/chartmimic/mutation-boundary.json",
+    "benchmarks/chartmimic/profile.json",
+    "configs/benchmarks/chartmimic.json",
+    "benchmarks/visualwebarena/README.md",
+    "benchmarks/visualwebarena/__init__.py",
+    "benchmarks/visualwebarena/adapter.py",
+    "benchmarks/visualwebarena/h0/harness.py",
+    "benchmarks/visualwebarena/h0/prompt.txt",
+    "benchmarks/visualwebarena/mechanism-profile.json",
+    "benchmarks/visualwebarena/mutation-boundary.json",
+    "benchmarks/visualwebarena/profile.json",
+    "configs/benchmarks/visualwebarena.json"
+  ],
+  "date": "2026-09-13",
+  "purpose": "User-approved retirement of inactive benchmark development scaffolds",
+  "parent_commit": "0b19c6a",
+  "active": [
+    "swe_mm",
+    "gamedevbench",
+    "vision2web",
+    "osworld_verified",
+    "agentic_vbench",
+    "browsecomp_v3"
+  ],
+  "archived": [
+    "design2code",
+    "claw_eval_mm"
+  ],
+  "removed_placeholders": [
+    "chartmimic",
+    "visualwebarena"
+  ],
+  "compatibility": {
+    "old_imports": [
+      "benchmarks.design2code",
+      "benchmarks.claw_eval_mm"
+    ],
+    "archived_adapter_requires_explicit_opt_in": true,
+    "archived_profiles": "original JSON retained; current status overlaid on read",
+    "historical_reproduction": "use original frozen source/config; archived scripts are reference-only"
+  },
+  "preserved": [
+    "runs/",
+    "experiments/frozen/",
+    "historical experiment configs and results",
+    "third_party source locks, licenses and provenance",
+    "benchmarks/claw_eval_mm/data/",
+    "benchmarks/claw_eval_mm/task-catalog.json",
+    "benchmarks/claw_eval_mm/upstream/",
+    "benchmarks/claw_eval_mm/docker/"
+  ],
+  "audit": {
+    "file_count": 16185,
+    "comparison": "path, file size and mtime_ns; not a full content hash sweep",
+    "changed_count": 0,
+    "changed_files": []
+  },
+  "validation": {
+    "pytest_passed": 145,
+    "new_retirement_tests": 5,
+    "ruff_check": "passed",
+    "ruff_format_check": "passed",
+    "current_document_local_links": "passed",
+    "model_gpu_cluster_benchmark_execution": false
+  }
+}

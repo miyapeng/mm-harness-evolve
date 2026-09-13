@@ -1,0 +1,124 @@
+{
+  "schema": 3,
+  "benchmark": "browsecomp_v3",
+  "mutable": [],
+  "fixed": {
+    "evaluator": [
+      "scorer/",
+      "evaluator/",
+      "evaluation/",
+      "tests/",
+      "**/steps/*/tests/**",
+      "**/judge*",
+      "examples/eval_rollout_results.py",
+      "omniseeker/src/benchmark/"
+    ],
+    "ground_truth": [
+      "data/",
+      "tasks/",
+      "solutions/",
+      "oracle/",
+      "ground_truth/"
+    ],
+    "environment": [
+      "environment/",
+      "docker/",
+      "**/Dockerfile",
+      "**/install.sh"
+    ],
+    "model_provider": [
+      "models/",
+      "providers/",
+      "configs/models/",
+      "omniseeker/configs/"
+    ],
+    "outer_controller": [
+      "mm_harness/",
+      "scripts/"
+    ]
+  },
+  "stage_locations": {
+    "acquire": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/utils/search_v2/image_processor.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/mcp_server/search_server.py",
+        "status": "located_not_enabled"
+      }
+    ],
+    "transform": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/utils/search_v2/image_processor.py",
+        "status": "located_not_enabled"
+      }
+    ],
+    "persist": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/utils/image_download_logger.py",
+        "status": "located_not_enabled"
+      }
+    ],
+    "route": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/prompts/system_prompts.py",
+        "status": "located_not_enabled"
+      }
+    ],
+    "ground": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/mcp_server/search_server.py",
+        "status": "located_not_enabled"
+      }
+    ],
+    "verify": [
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/envs/http_mcp_env.py",
+        "status": "located_not_enabled"
+      },
+      {
+        "source_root": "third_party/BrowseComp-V3-8584b33073b4e1e53c98a97608e7e5b73883dfc9",
+        "path": "omniseeker/src/prompts/system_prompts.py",
+        "status": "located_not_enabled"
+      }
+    ]
+  },
+  "generic_source": [],
+  "unlocated_stages": [],
+  "limitations": [
+    "Source locations verified; mutation disabled until provider/budget code is separated from shared env and H0 frozen."
+  ]
+}

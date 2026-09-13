@@ -1,0 +1,63 @@
+{
+  "schema": 3,
+  "benchmark": "agentic_vbench",
+  "mutable": [],
+  "fixed": {
+    "evaluator": [
+      "scorer/",
+      "evaluator/",
+      "evaluation/",
+      "tests/",
+      "**/steps/*/tests/**",
+      "**/judge*"
+    ],
+    "ground_truth": [
+      "data/",
+      "tasks/",
+      "solutions/",
+      "oracle/",
+      "ground_truth/"
+    ],
+    "environment": [
+      "environment/",
+      "docker/",
+      "**/Dockerfile",
+      "**/install.sh"
+    ],
+    "model_provider": [
+      "models/",
+      "providers/",
+      "configs/models/"
+    ],
+    "outer_controller": [
+      "mm_harness/",
+      "scripts/"
+    ]
+  },
+  "stage_locations": {
+    "acquire": [],
+    "transform": [],
+    "persist": [],
+    "route": [],
+    "ground": [],
+    "verify": []
+  },
+  "generic_source": [
+    {
+      "source_root": "third_party/AgenticVBench-6d7f19a5832b283be6b27bf9cc0d3c1f47e97349",
+      "path": "scripts/avb.py",
+      "status": "launcher_not_A_runtime"
+    }
+  ],
+  "unlocated_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "limitations": [
+    "Research applicability does not establish a mutable runtime location; unlocated stages are not enabled."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "same_model": true,
+  "providers": {
+    "local_qwen": {
+      "api_key_env": "MM_HARNESS_API_KEY",
+      "base_url": "http://10.119.255.142:18002/v1",
+      "no_proxy": true,
+      "protocol": "openai_chat"
+    }
+  },
+  "roles": {
+    "evolver": {
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "max_tokens": 8192,
+      "model": "Qwen3.5-9B",
+      "provider": "local_qwen",
+      "revision": "local-Qwen3.5-9B-config-d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "temperature": 0.0,
+      "timeout_seconds": 240
+    },
+    "executor": {
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "max_tokens": 8192,
+      "model": "Qwen3.5-9B",
+      "provider": "local_qwen",
+      "revision": "local-Qwen3.5-9B-config-d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "temperature": 0.0,
+      "timeout_seconds": 240
+    }
+  }
+}

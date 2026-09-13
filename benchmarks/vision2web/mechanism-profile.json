@@ -1,0 +1,48 @@
+{
+  "task_domain": "reference prototype to rendered website and repair",
+  "modalities": [
+    "image",
+    "gui",
+    "rendered_artifact"
+  ],
+  "environment_type": "website workspace + browser",
+  "initial_media_available": true,
+  "active_observation_available": true,
+  "interactive_environment": true,
+  "current_h0_harness": "Official Vision2Web OpenHandsAdapter@577f9397b3db8fc6d828adde254a830caa65d515; external OpenHands runtime must also be pinned",
+  "current_h0_media_policy": "Prototype resources mounted; native adapter instruction/URL construction. A render/inspect policy depends on separately selected OpenHands runtime, not on evaluator VLM.",
+  "agent_visible_media": [
+    "released prototypes",
+    "resources",
+    "runtime rendered website"
+  ],
+  "evaluator_only_media": [
+    "workflow.json",
+    "scoring reference screenshots"
+  ],
+  "development_data_status": "193 released evaluation tasks local; independent development pool not approved.",
+  "heldout_evaluation_status": "Not run under current research protocol.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "plausible",
+  "integration_status": "source_integrated",
+  "integration_evidence": [
+    "benchmarks/vision2web/upstream/SOURCE.json"
+  ],
+  "limitations": [
+    "CLI/loading checks only; no effective native rollout/scoring/evolution validation.",
+    "Only adapter source is integrated; do not expose evaluator as verification or pretend full MM runtime is located."
+  ],
+  "source_lock": "Vision2Web",
+  "benchmark_id": "vision2web",
+  "status": "active",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/vision2web/mutation-boundary.json"
+}

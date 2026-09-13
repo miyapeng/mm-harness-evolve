@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "swe-mm-three-mechanisms-v1",
+  "file": "config/default_mm_with_images.yaml",
+  "one_category_per_candidate": true,
+  "categories": {
+    "observation": {
+      "title": "When to observe and how to check visual freshness",
+      "yaml_paths": ["agent.templates.instance_template"],
+      "allowed": ["request a fresh screenshot after a visually relevant edit", "reobserve when tool success conflicts with visible state", "associate the current screenshot with the current edit"],
+      "required_evidence": ["the action or edit event", "the observation available to A and its request reference, if recorded", "the visual mismatch or missing evidence, stated without inventing it"],
+      "mechanism_check": "A actually obtains and receives an updated observation under the stated condition",
+      "limit": "Instructions only; no new screenshot tool, crop implementation, model, or permissions. Preserve the task and workspace template variables."
+    },
+    "context": {
+      "title": "Retain recent observations with the existing history processor",
+      "yaml_paths": ["agent.history_processors", "agent.templates.next_step_template", "agent.templates.next_step_no_output_template"],
+      "allowed": ["enable or tune official last_n_observations.n and polling", "disable that optional truncation when useful evidence was lost", "clarify the latest tool observation in next-step text"],
+      "required_evidence": ["an actual A request or explicit missing-request limitation", "the relevant event that was omitted or buried in old observations"],
+      "mechanism_check": "Inspect later A requests to establish which observations were retained or elided",
+      "limit": "Keep image_parsing unchanged and last in the processor chain; n and polling must be positive integers. No new memory database, summarizer model, or history processor code."
+    },
+    "verification": {
+      "title": "Submission-time self-check instructions",
+      "yaml_paths": ["agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"],
+      "allowed": ["ask to rerun the relevant check after the final edit", "ask to inspect the rendered or interactive result when relevant", "make the submission checklist shorter or more specific about evidence"],
+      "required_evidence": ["the final edit and submission events", "what check was missing or stale", "the allowed evaluator feedback or observed remaining defect"],
+      "mechanism_check": "The requested check executes after the last relevant edit and before final submission",
+      "limit": "Change reminder text only. No submit executable edits, official evaluator changes, extra tools, or extra budget. Preserve diff template variables."
+    }
+  },
+  "fixed": ["all other YAML fields", "all Python and tool executable files", "model/provider/sampling settings", "image input parsing and image-tool capability", "task source and template variables", "official evaluator and answers", "environment/tool permissions", "outer evolver and B prompt", "task/split manifests", "request/token/time budgets", "recording and version code"],
+  "out_of_scope": "Record an out-of-scope mechanism as no_change plus future_work; do not work around the policy with shell snippets, task-specific solutions or encoded scripts inside a prompt.",
+  "acceptance_scope": "A bounded pilot search space, not a claim that these three mechanisms are optimal. Official H0 remains unchanged."
+}

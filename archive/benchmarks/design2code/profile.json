@@ -1,0 +1,35 @@
+{
+  "benchmark": "design2code",
+  "status": "real_smoke_completed",
+  "transport": "native",
+  "upstream": {
+    "url": "https://github.com/NoviScl/Design2Code.git",
+    "commit": "7a575e4c33f417c4be5c64072b8f5798de0d0f99"
+  },
+  "starting_point": "Design2Code/prompting/gpt4v.py:direct_prompting",
+  "h0_status": "image-only direct frozen",
+  "protocol": {
+    "agent_input": [
+      "reference screenshot"
+    ],
+    "evaluator_only": [
+      "reference HTML"
+    ],
+    "group_key": "website/template"
+  },
+  "commands": {
+    "prepare": null,
+    "execute": null,
+    "score": null,
+    "cleanup": null
+  },
+  "evaluator": {
+    "source": "official with audited compatibility",
+    "vlm": null
+  },
+  "execution_components": {
+    "planner": "roles.executor"
+  },
+  "timeout_seconds": 1800,
+  "score_timeout_seconds": 600
+}

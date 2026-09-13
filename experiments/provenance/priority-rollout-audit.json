@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-09-09T12:31:34.572120+00:00",
+  "scope": "local source hashes and native CLI startup; no inference, image pull or scoring",
+  "docker": {
+    "ok": false,
+    "error": "docker executable absent"
+  },
+  "benchmarks": {
+    "claw_eval_mm": {
+      "source": "third_party/claw-eval-5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+      "commit": "5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+      "h0_source_matches_manifest": true,
+      "mismatches": [],
+      "cli": {
+        "ok": true,
+        "exit_code": 0,
+        "output": "usage: claw-eval [-h]\n                 {run,_run-inner,build-image,grade,batch,cleanup,list} ...\n\nClaw evaluation framework\n\npositional arguments:\n  {run,_run-inner,build-image,grade,batch,cleanup,list}\n    run                 Run agent on a task\n    _run-inner          ==SUPPRESS==\n    build-image         Build the sandbox Docker image\n    grade               Grade an existing trace\n    batch               Run all tasks in parallel\n    cleanup             Remove all claw-eval Docker containers\n    list                List available tasks\n\noptions:\n  -h, --help            show this help message and exit\n"
+      },
+      "native_rollout_verified": false,
+      "evolution_worker_wired": false,
+      "fixture_audit": "experiments/provenance/claw-fixture-audit.json"
+    },
+    "vision2web": {
+      "source": "third_party/Vision2Web-577f9397b3db8fc6d828adde254a830caa65d515",
+      "commit": "577f9397b3db8fc6d828adde254a830caa65d515",
+      "h0_source_matches_manifest": true,
+      "mismatches": [],
+      "cli": {
+        "ok": true,
+        "exit_code": 0,
+        "output": "Usage: vision2web [OPTIONS] COMMAND [ARGS]...\n\n  Vision2Web: Benchmark for visual web development with AI agents\n\nOptions:\n  --version  Show the version and exit.\n  --help     Show this message and exit.\n\nCommands:\n  analyze    Analyze evaluation results and print summary statistics\n  evaluate   Run evaluation phase to test generated projects\n  inference  Run inference phase to generate projects from specifications\n"
+      },
+      "native_rollout_verified": false,
+      "evolution_worker_wired": false,
+      "data_import": {
+        "benchmark": "vision2web",
+        "source": "/data/miyapeng/mmcode/MultimodalCode/data/vision2web/extracted",
+        "destination": "data/vision2web/extracted",
+        "transfer": "independent byte-verified copies, no symlinks",
+        "metadata": {
+          "manifest.json": "35e648374e1ee9dbec5979a52e9aae2094b11a6ea780ea1ac150b0a324cb427f",
+          "image.json": "e381036aea033e05588c50b5102f43094fa8d8f9534e7e520c7e6388bd02b6c4",
+          "instance_ids.txt": "999763f423decf5986749e895b7eb84bafbf5229fe579bf056d4ed10bc2b93a0"
+        },
+        "file_count": 21399,
+        "manifest": "data/vision2web/vision2web-import.json",
+        "manifest_sha256": "41b18cca4efd0576af6fed53558e1cf09ad95bc38acab8a1f1fa2cdba81447e5",
+        "bytes": 4372093156
+      }
+    },
+    "swe_mm": {
+      "source": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "h0_source_matches_manifest": true,
+      "mismatches": [],
+      "cli": {
+        "ok": true,
+        "exit_code": 0,
+        "output": "\ud83d\udc4b INFO     This is SWE-agent version 1.1.0 (hash='unavailable') with SWE-ReX   \n            version 1.4.0 (rex_hash='unavailable').                             \nMain command line interface for SWE-agent.\n\n=== USAGE ===\n\nsweagent <command> \n\nDisplay usage instructions for a specific command:\n\nsweagent <command> --help\n\n=== SUBCOMMANDS TO RUN SWE-AGENT ===\n\nrun or r: Run swe-agent on a single problem statement, for example a github \nissue.\nrun-batch or b: Run swe-agent on a batch of problem statements, e.g., on \nSWE-Bench.\n\n=== MISC SUBCOMMANDS ===\n\nmerge-preds: Merge multiple prediction files into a single file. In most cases\n    run-batch will already do this, but you can use this to merge predictions\n    from multiple directories.\ninspect or i: Open a single trajectory file in a terminal-based viewer.\ninspector or I: Open trajectories in a web-based viewer.\nrun-replay: Replay a trajectory file or a demo file.\n    This can be useful to fill in environment output when creating \ndemonstrations.\ntraj-to-demo: Convert a trajectory file to an easy to edit demo file.\nrun-api: Run swe-agent as a backend for a GUI\nremove-unfinished or ru: Remove unfinished trajectories\nquick-stats or qs: Calculate quick stats from a directory of trajectories\n\n"
+      },
+      "native_rollout_verified": false,
+      "evolution_worker_wired": false,
+      "data_import": {
+        "benchmark": "swe_mm",
+        "source": "/data/miyapeng/mmcode/MultimodalCode/data/swe_mm/dev",
+        "destination": "data/swe_mm/dev",
+        "transfer": "independent byte-verified copies, no symlinks",
+        "metadata": {},
+        "file_count": 606,
+        "manifest": "data/swe_mm/swe_mm-import.json",
+        "manifest_sha256": "6d3be63fc69ef4d2610ed00da45f4772a79ada9875879ce890f47879c2e9b867",
+        "bytes": 39476620
+      }
+    }
+  }
+}

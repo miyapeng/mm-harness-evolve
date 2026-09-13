@@ -1,0 +1,38 @@
+{
+  "schema": "multimodalcode-vision2web-openhands-profile-1",
+  "profile": "official",
+  "benchmark_revision": "577f9397b3db8fc6d828adde254a830caa65d515",
+  "runtime_image": {
+    "reference": "registry.pjlab.org.cn/ccr-t-llm-frontier/vision2web:official-577f939",
+    "digest": "sha256:3d2fa9b0999a1fbb10c9d4ccc653c7d5560a713668d6c18c80d0d06e36e43056"
+  },
+  "scaffold": {
+    "command": "python3.12 -m openhands_cli.entrypoint --headless --json --override-with-envs -t <official-prompt>",
+    "environment": [
+      "LLM_MODEL",
+      "LLM_API_KEY",
+      "LLM_BASE_URL"
+    ],
+    "timeout_seconds_per_attempt": 7200,
+    "max_retries": 2,
+    "success_condition": "process exit code is zero and /workspace/start.sh exists",
+    "finish_action_required": false,
+    "browser_tool_enabled": false,
+    "prototype_delivery": "agent-selected file_editor(view) returns ImageContent"
+  },
+  "clusterx_transport": {
+    "adaptation": "the ClusterX task container replaces the upstream outer docker exec boundary",
+    "agent_behavior_changed": false
+  },
+  "local_model_requirement": {
+    "supports_vision_must_be_true": true,
+    "recommended_route": "litellm_proxy/<model> with truthful /v1/model/info metadata",
+    "raw_unknown_vllm_aliases": "rejected rather than silently evaluated as text-only"
+  },
+  "research_overrides_forbidden": [
+    "force vision monkey patch",
+    "hard-coded context/output limits",
+    "disabled upstream skill discovery",
+    "FinishAction admission gate"
+  ]
+}

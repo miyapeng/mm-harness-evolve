@@ -1,0 +1,42 @@
+{
+  "task_domain": "visual desktop state to grounded GUI action",
+  "modalities": [
+    "image",
+    "gui"
+  ],
+  "environment_type": "resettable desktop VM",
+  "initial_media_available": true,
+  "active_observation_available": true,
+  "interactive_environment": true,
+  "current_h0_harness": "Agent-S S3 single trajectory; official PromptAgent possible baseline; neither frozen locally",
+  "current_h0_media_policy": "Screenshot/action loop from proposed S3 recipe; grounding model must be pinned independently.",
+  "agent_visible_media": [
+    "desktop screenshots",
+    "task-released files"
+  ],
+  "evaluator_only_media": [
+    "reference desktop state",
+    "evaluation assets"
+  ],
+  "development_data_status": "No approved independent development pool.",
+  "heldout_evaluation_status": "Official verified evaluation reserved; not run.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "plausible",
+  "integration_status": "planned",
+  "integration_evidence": [],
+  "limitations": [
+    "VM reset, source versions, grounding component and score integration missing."
+  ],
+  "source_lock": null,
+  "benchmark_id": "osworld_verified",
+  "status": "active",
+  "applicable_mm_stages": [
+    "acquire",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/osworld_verified/mutation-boundary.json"
+}

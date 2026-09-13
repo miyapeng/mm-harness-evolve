@@ -1,0 +1,30 @@
+# Compatibility build for the current PJLab network.
+#
+# The upstream Dockerfile.agent remains the canonical recipe. Its default
+# DaoCloud base was unreachable on 2026-09-09. This pinned in-namespace image
+# provides Python 3.12 and Playwright/Chromium. The official media tools and
+# requirements-sandbox-server.txt dependencies are installed below, then the
+# exact upstream sandbox server is added.
+FROM registry.pjlab.org.cn/ccr-t-llm-frontier/vision2web@sha256:3d2fa9b0999a1fbb10c9d4ccc653c7d5560a713668d6c18c80d0d06e36e43056
+
+WORKDIR /workspace
+RUN printf '%s\n' \
+      'deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy main restricted universe multiverse' \
+      'deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates main restricted universe multiverse' \
+      'deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security main restricted universe multiverse' \
+      > /tmp/claw-sources.list \
+    && apt-get -o Dir::Etc::sourcelist=/tmp/claw-sources.list -o Dir::Etc::sourceparts=- update \
+    && apt-get -o Dir::Etc::sourcelist=/tmp/claw-sources.list -o Dir::Etc::sourceparts=- install -y --no-install-recommends ffmpeg poppler-utils \
+    && rm -rf /var/lib/apt/lists/*
+COPY requirements-sandbox-server.txt /tmp/requirements.txt
+COPY src/claw_eval/sandbox/ /opt/sandbox/
+
+RUN python -m pip install -r /tmp/requirements.txt \
+      -i https://pypi.tuna.tsinghua.edu.cn/simple \
+      --trusted-host pypi.tuna.tsinghua.edu.cn \
+      --no-cache-dir \
+    && rm /tmp/requirements.txt
+RUN python -c "import cv2, fastapi, pdf2image, PIL, playwright, pydantic, uvicorn"
+
+EXPOSE 8080
+ENTRYPOINT ["python", "/opt/sandbox/server.py", "--port", "8080"]

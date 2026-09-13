@@ -1,0 +1,20 @@
+{
+  "status": "stopped_by_user",
+  "stopped_at_utc": "2026-09-13T08:44:04.936101+00:00",
+  "reason": "User requested stopping the long development run and recording unfinished work.",
+  "gpu_job": "mmhe-q38-2gpu-0913-a",
+  "gpu_job_status": "STOPPED",
+  "gpu_count_released": 2,
+  "local_driver_stopped": true,
+  "related_cpu_workers": "all terminal in clusterx list",
+  "completed_e_rollouts": 4,
+  "completed_evolution_rounds": 0,
+  "candidate_produced": false,
+  "pending": [
+    "B diagnosis and candidate patch",
+    "candidate E rerun",
+    "conditional V evaluation",
+    "selection and next-round execution"
+  ],
+  "restart_policy": "Do not restart without a subsequent user instruction. Retain interrupted B workspace for inspection; plain resume intentionally refuses overwriting it."
+}

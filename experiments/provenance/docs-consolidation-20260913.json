@@ -1,0 +1,167 @@
+{
+  "date": "2026-09-13",
+  "status": "completed",
+  "source_commit": "1fb50d939633f0f24bc5d62a17c2b0d31870772c",
+  "canonical_document": "docs/PROJECT.md",
+  "scope": "First-party top-level docs only; preserve code, configs, data, runs, provenance, literature and upstream documentation.",
+  "files": [
+    {
+      "path": "docs/STATUS.md",
+      "sha256": "57330af1bfb9a3c254c3700e3fb1e6e3d6368d4cce68548c12bc1aae3ee304a6",
+      "replacement": "docs/PROJECT.md#status",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "7fcb0e968248d58f09a866b60912bcbab9fc0996339710922c58149a9d65a575",
+      "replacement": "docs/PROJECT.md#implementation",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/benchmark-candidates-with-development-data-2026-09-12.md",
+      "sha256": "ac8e8c02de5fa3aa3a3dd36d6378525431f0679e855abd356e4a3339cb37858b",
+      "replacement": "docs/PROJECT.md#questions",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/benchmark-splits-audit-2026-09-12.md",
+      "sha256": "d71f2843a5e0a8190270092c5d6f219d7341a94ad06de689dcfdefc502f3535d",
+      "replacement": "docs/PROJECT.md#configuration",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/benchmark-workers.md",
+      "sha256": "b21a0dfcbcc6b499554cfbe0c971a281e2bd340bef35e69709a66503c37390e0",
+      "replacement": "docs/PROJECT.md#implementation",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/cluster-scheduling-audit-2026-09-11.md",
+      "sha256": "459dd8c39d4d93ba79b97ec710a268514621a12d1fe67f450c9bdd008bb830cb",
+      "replacement": "docs/PROJECT.md#experiments",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/configured-minibatches.md",
+      "sha256": "d7204839aa1f21b2ec37ac7b1ba3964be4a5f991e84a49876470564467f4ef25",
+      "replacement": "docs/PROJECT.md#configuration",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/development-plan.md",
+      "sha256": "a02e798d71f3d7452f081210e88d8df19b2e4a8a9a763d3369eaea74fc72d8d1",
+      "replacement": "docs/PROJECT.md#next",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/environment-audit.md",
+      "sha256": "b3441a43cd85351a310972b298ae33c4a44b82522655e5c8da620ff5d65f3cb7",
+      "replacement": "docs/PROJECT.md#environment",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/evolution-protocol-review-2026-09-12.md",
+      "sha256": "5764e62250445fdd983bbe6c8d9cf286effa3f8afdc79cebb72e6acc8d7fba9c",
+      "replacement": "docs/PROJECT.md#pipeline",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/evolution-screening-gepa-2026-09-12.md",
+      "sha256": "7130a9f9c700179215d6b85f119f21e04031420dbbf78f37d1e6b45e59275901",
+      "replacement": "docs/PROJECT.md#pipeline",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/harness-mechanism-contract.md",
+      "sha256": "e02be0f5957ef8a98621d13df31770899ff0216880610dca7e60526323d83af7",
+      "replacement": "docs/PROJECT.md#workspace",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/history-search.md",
+      "sha256": "8c391003cbb0d70dcf5fb939dc014ccf78f033c76c9008b2cdc18fcdd1b39f4f",
+      "replacement": "docs/PROJECT.md#pipeline",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/implementation-review-2026-09-09.md",
+      "sha256": "061b4a9e41efd3593df2924076b62a95babb97210bec083a67ae0e6efe645061",
+      "replacement": "docs/PROJECT.md#status",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/meta-harness-comparison-2026-09-11.md",
+      "sha256": "d36c15111b5cae30573509c08c859acdfb89e818aecc376d05ea47c6aac40dd8",
+      "replacement": "docs/PROJECT.md#questions",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/priority-benchmarks.md",
+      "sha256": "c92d51be6eb1256e18beeef8e0ab8d633161fdf7983c8e91e5ea0575b3184304",
+      "replacement": "docs/PROJECT.md#benchmarks",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/qwen38-claude-runtime.md",
+      "sha256": "e4914afe96c2405fcc8bc2572a950b0bab9aa096cd6f028874ae7117d9704e46",
+      "replacement": "docs/PROJECT.md#environment",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/reproduction.md",
+      "sha256": "a41af9637ecd4fb679a8b3793f4fc3daa5c9fef9da4f7db4c9d81e0b4bc23ace",
+      "replacement": "docs/PROJECT.md#commands",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/research-agenda.md",
+      "sha256": "8eff35518eb6d8c11b58aafc64ec7e459963b7ee58a9becd1ae8ed46f8d573b1",
+      "replacement": "docs/PROJECT.md#questions",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/research-design.md",
+      "sha256": "37fef735e12636333204d6bb726ecb6504068e81b36c727633da16a1388c443a",
+      "replacement": "docs/PROJECT.md#research",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/rollout-workspace.md",
+      "sha256": "7e63cdebc7dbd9dfa10c7a2e28f5f0c7bcf0d6e0397720d917e440457703b097",
+      "replacement": "docs/PROJECT.md#workspace",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/swe-mm-evolution-design-2026-09-11.md",
+      "sha256": "baa00d9bb66adcbeb558be96f6b54ade4850389171e482111f8f2f2b2520a1e2",
+      "replacement": "docs/PROJECT.md#pipeline",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/swe-mm-pilot-progress-2026-09-11.md",
+      "sha256": "d477a6e1abe7de22e516f85a7b514225e01fe72f214a887a8f993851b3997334",
+      "replacement": "docs/PROJECT.md#experiments",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/swe-mutation-scope-v1.md",
+      "sha256": "1812d25d02af4f362ee6f0931bc71cbf9b9c6de8a00d1eb9d408fb4337badcbc",
+      "replacement": "docs/PROJECT.md#workspace",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/swe-native-loop-2026-09-13.md",
+      "sha256": "537dae3df39c909c06b38f13be069b77cc795b02acbb554210b24be95173c53d",
+      "replacement": "docs/PROJECT.md#experiments",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    },
+    {
+      "path": "docs/upstream-decisions.md",
+      "sha256": "9cad3c9fa667f9da7f9d4cb80b4eca078300744cd64be3ce8ed3603bad8e4edc",
+      "replacement": "docs/PROJECT.md#environment",
+      "reason": "Current content consolidated; obsolete dated status or superseded design removed from current documentation."
+    }
+  ],
+  "deletion_authorization": "User explicitly confirmed deletion of the listed 26 documents.",
+  "deleted_count": 26
+}

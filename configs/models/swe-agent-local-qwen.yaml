@@ -1,0 +1,12 @@
+# Provider/model mapping from local-qwen.json; no prompt, tool or control-flow overrides.
+agent:
+  model:
+    name: openai/Qwen3.5-9B
+    api_base: http://10.119.255.142:18002/v1
+    api_key: $MM_HARNESS_API_KEY
+    temperature: 0.0
+    completion_kwargs:
+      max_tokens: 8192
+      extra_body:
+        chat_template_kwargs:
+          enable_thinking: false

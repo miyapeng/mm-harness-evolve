@@ -1,0 +1,14 @@
+{
+  "instances_loaded": 193,
+  "task_counts": {
+    "webpage": 100,
+    "frontend": 66,
+    "website": 27
+  },
+  "official_prompt_sha256": {
+    "webpage": "0ec0f6a4465ad81e14fc67290ed2c1a077fe150715d0b818ef113db7c9159b34",
+    "frontend": "b8c72e84c9efd85cba8ada58c0a527e69c771776f0a2a35296bede0317da3c9f",
+    "website": "dc748cb63d8ba62da48b53c759244c9ca473c7f2d1465f03b2556c96d5c95177"
+  },
+  "scope": "official dataset loader and category prompt dispatch; no inference, browser or scoring"
+}

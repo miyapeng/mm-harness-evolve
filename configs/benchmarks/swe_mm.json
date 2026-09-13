@@ -1,0 +1,67 @@
+{
+  "benchmark": "swe_mm",
+  "adapter": {
+    "benchmark": "swe_mm",
+    "status": "native_cli_verified; evolution_worker_unwired",
+    "upstream": {
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "path": "third_party/SWE-agent-3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "archive_sha256": "a02724577cde3c7033343efff74184ad33ca783b9f3b81bea90c13f4c47219a4",
+      "license": "MIT",
+      "local_changes": "none; pinned official archive",
+      "integration": "official H0 source/config and native CLI integrated; Docker rollout not yet verified"
+    },
+    "executor_runtime": "SWE-agent",
+    "h0_status": "official source and native launcher integrated; rollout blocked on container environment",
+    "protocol": {
+      "agent_input": [
+        "issue text",
+        "released issue images",
+        "repository at base commit"
+      ],
+      "evaluator_only": [
+        "gold patch",
+        "test patch",
+        "hidden tests"
+      ],
+      "group_key": "repository",
+      "reference_answers_visible": false
+    },
+    "expected_artifacts": [
+      "patch.diff"
+    ],
+    "native_metrics": [
+      "resolved"
+    ],
+    "commands": {
+      "prepare": null,
+      "execute": null,
+      "score": null,
+      "cleanup": null
+    },
+    "timeout_seconds": 1800,
+    "score_timeout_seconds": 600,
+    "execution_components": {
+      "planner": "roles.executor",
+      "grounding": null
+    },
+    "evaluator": {
+      "source": "official",
+      "revision": "7e578260da58400f307e435e43d1d2ab29d686f6",
+      "vlm": null,
+      "url": "https://github.com/SWE-bench/SWE-bench.git",
+      "commit": "7e578260da58400f307e435e43d1d2ab29d686f6",
+      "path": "third_party/SWE-bench-7e578260da58400f307e435e43d1d2ab29d686f6"
+    },
+    "remaining": [
+      "Docker/SWE-ReX instance and image access",
+      "actual issue image/browser feedback and model budget",
+      "official scoring and evolution execute/score worker"
+    ],
+    "transport": "command",
+    "official_h0_manifest": "benchmarks/swe_mm/upstream/SOURCE.json",
+    "native_launcher": "benchmarks.swe_mm.launch_h0",
+    "dataset_path": "data/swe_mm/dev"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-13",
+  "scope": "native_execution_scoring_and_real_B_vision_verified_multi_round_test_running",
+  "model_job": "mmhe-q38-2gpu-0913-a",
+  "gpus": 2,
+  "exclusive_node": false,
+  "source_reuse": {
+    "path": "/data/miyapeng/mmcode/MultimodalCode/scripts/swe_mm/direct_case_eval.py",
+    "sha256": "d57366e649c96d10338f39ffc94786853b0a0d3276766942f63b73dd3af442ca",
+    "destination": "benchmarks/swe_mm/score_worker.py",
+    "changes": [
+      "project-local pinned evaluator imports",
+      "mandatory model patch; no gold fallback",
+      "fresh scorer-only cleanup guard",
+      "verify generated official eval script",
+      "patch rejection status and completion checksum"
+    ]
+  },
+  "service_ready": "runs/services/mmhe-q38-2gpu-0913-a/ready.json",
+  "real_actor_debug_attempts": [
+    "runs/swe-native-q38-20260913-a/smoke-a",
+    "runs/swe-native-q38-20260913-a/smoke-b",
+    "runs/swe-native-q38-20260913-a/smoke-c"
+  ],
+  "details": "docs/swe-native-loop-2026-09-13.md",
+  "active_search": "runs/swe-q38-e4v4-20260913-v3",
+  "real_B_probe": "runs/q38-real-claude-probe-0913-b",
+  "official_smoke": {
+    "instance_id": "processing__p5.js-6069",
+    "resolved": false,
+    "fail_to_pass_success": 28,
+    "fail_to_pass_failure": 0,
+    "pass_to_pass_failure": 1,
+    "model_rollout": true,
+    "report": "runs/swe-native-q38-20260913-a/smoke-c/scorer-private/processing__p5.js-6069/report.json",
+    "executed_browser_image": "runs/swe-native-q38-20260913-a/smoke-c/analysis/visual-evidence.json"
+  },
+  "scorer_positive_control": {
+    "model_called": false,
+    "reference_patch": true,
+    "resolved": false,
+    "same_pass_to_pass_timeout": true,
+    "excluded_from_evolution": true,
+    "record": "runs/swe-scorer-positive-control-0913/control.json"
+  }
+}

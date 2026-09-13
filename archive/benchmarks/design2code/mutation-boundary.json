@@ -1,0 +1,57 @@
+{
+  "schema": 3,
+  "benchmark": "design2code",
+  "mutable": [],
+  "fixed": {
+    "evaluator": [
+      "scorer/",
+      "evaluator/",
+      "evaluation/",
+      "tests/",
+      "**/steps/*/tests/**",
+      "**/judge*"
+    ],
+    "ground_truth": [
+      "data/",
+      "tasks/",
+      "solutions/",
+      "oracle/",
+      "ground_truth/"
+    ],
+    "environment": [
+      "environment/",
+      "docker/",
+      "**/Dockerfile",
+      "**/install.sh"
+    ],
+    "model_provider": [
+      "models/",
+      "providers/",
+      "configs/models/"
+    ],
+    "outer_controller": [
+      "mm_harness/",
+      "scripts/"
+    ]
+  },
+  "stage_locations": {
+    "acquire": [],
+    "transform": [],
+    "persist": [],
+    "route": [],
+    "ground": [],
+    "verify": []
+  },
+  "generic_source": [],
+  "unlocated_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "limitations": [
+    "Research applicability does not establish a mutable runtime location; unlocated stages are not enabled."
+  ]
+}

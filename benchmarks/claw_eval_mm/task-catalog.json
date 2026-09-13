@@ -1,0 +1,717 @@
+{
+  "source_commit": "5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+  "selection": {
+    "tag": "multimodal"
+  },
+  "count": 101,
+  "research_splits_assigned": false,
+  "tasks": [
+    {
+      "task_id": "M001_clock",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M001_clock/task.yaml",
+      "task_yaml_sha256": "535d593998c15c60dfd6b7b495751d7f870d8d11d9acf9e636fe6ace05f5fdba"
+    },
+    {
+      "task_id": "M002_world_clock",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M002_world_clock/task.yaml",
+      "task_yaml_sha256": "13257645da24934141ab1507ac3995bcc2b573351e85fb025d709d40bbac219c"
+    },
+    {
+      "task_id": "M003_solar_system",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M003_solar_system/task.yaml",
+      "task_yaml_sha256": "81546853d0885302767a3df65b32e6d41f415819b59db3041c2c61e8567ddba5"
+    },
+    {
+      "task_id": "M004_countdown_fireworks",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M004_countdown_fireworks/task.yaml",
+      "task_yaml_sha256": "d5de593e10887265707adf7f9f8db74fa46f439ef298f310e710bd9b95200dfa"
+    },
+    {
+      "task_id": "M005_score_canon",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M005_score_canon/task.yaml",
+      "task_yaml_sha256": "187a6ec58c27d018f01d9d46169359ba412b2a267fb9a767314ceae9d2a7d0c0"
+    },
+    {
+      "task_id": "M006_score_mariage",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M006_score_mariage/task.yaml",
+      "task_yaml_sha256": "7425916ffd7aa013bc63c24d8a6a558aeca5c326c165e945448567e8e0d3e085"
+    },
+    {
+      "task_id": "M007_score_symphony",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M007_score_symphony/task.yaml",
+      "task_yaml_sha256": "88b8d3ff9df651d433d03db2640bc7cc7363b346efbbcb907555682f066cd5b6"
+    },
+    {
+      "task_id": "M008_metro_map_1",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M008_metro_map_1/task.yaml",
+      "task_yaml_sha256": "e56c4cfbbf6bf2c35b3b95a4abff835f7bb3aad30672af7f8a7230c9951388b8"
+    },
+    {
+      "task_id": "M009_metro_map_2",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M009_metro_map_2/task.yaml",
+      "task_yaml_sha256": "8c5ebc7ee5266b342023c643c085ea558c4cbc7ed8fe281112b367eb45632deb"
+    },
+    {
+      "task_id": "M010_score_canon_animated",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M010_score_canon_animated/task.yaml",
+      "task_yaml_sha256": "15e8f0df0ff2b6c27c448caeac37ed83015c8c2b185e1800ff98f0e2bbd5a9ca"
+    },
+    {
+      "task_id": "M011_score_mariage_animated",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M011_score_mariage_animated/task.yaml",
+      "task_yaml_sha256": "9af729ffeb9b7cc5f128b6cf746cbb5892ef29affc89b0323480cb9968a7ac19"
+    },
+    {
+      "task_id": "M012_score_symphony_animated",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M012_score_symphony_animated/task.yaml",
+      "task_yaml_sha256": "45bcfdcd36da16f0e1a1d7e391d3440e36555c723032209765e86dd885237393"
+    },
+    {
+      "task_id": "M013_metro_route_1",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M013_metro_route_1/task.yaml",
+      "task_yaml_sha256": "af9d4336614d6ae9ce6d80916c170e83513a6545bc9a749197b4c928c5648338"
+    },
+    {
+      "task_id": "M014_metro_route_2",
+      "category": "multimodal_webpage",
+      "language": "en",
+      "task_yaml": "tasks/M014_metro_route_2/task.yaml",
+      "task_yaml_sha256": "b1ccb862de2aef8eb3821758bbb77245c899b84f1ecc24afd696e5c6e282babb"
+    },
+    {
+      "task_id": "M015_video_subtitle_ocr_english",
+      "category": "video_ocr",
+      "language": "en",
+      "task_yaml": "tasks/M015_video_subtitle_ocr_english/task.yaml",
+      "task_yaml_sha256": "95fbe5eb80f477895fd902d037410af5f069419d4c8900e2b927381ac87850ed"
+    },
+    {
+      "task_id": "M016_video_subtitle_ocr_chinese_filter",
+      "category": "video_ocr",
+      "language": "zh",
+      "task_yaml": "tasks/M016_video_subtitle_ocr_chinese_filter/task.yaml",
+      "task_yaml_sha256": "5ba5c425a89c3a42624dfd9cac3bf5c4ce5f7f8b08699ff26f8e0d519b911539"
+    },
+    {
+      "task_id": "M017_video_subtitle_ocr_timestamp",
+      "category": "video_ocr",
+      "language": "en",
+      "task_yaml": "tasks/M017_video_subtitle_ocr_timestamp/task.yaml",
+      "task_yaml_sha256": "2be2a7c08aad965ae10dd5e418798fa6eb4d2741cdd76a8291fcc41531e61a17"
+    },
+    {
+      "task_id": "M018_doc_extraction_line_chart",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M018_doc_extraction_line_chart/task.yaml",
+      "task_yaml_sha256": "dc465156590ac71714692657bdd10717015fe0c7fd3e8dd059375bf12faf5286"
+    },
+    {
+      "task_id": "M019_doc_extraction_radar_chart",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M019_doc_extraction_radar_chart/task.yaml",
+      "task_yaml_sha256": "f7672b391e56d49540df9921462e91256ac3076230de79958a91b4f3b994692f"
+    },
+    {
+      "task_id": "M020_multi_doc_extraction_bar_chart",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M020_multi_doc_extraction_bar_chart/task.yaml",
+      "task_yaml_sha256": "a1b9f2fe572c20d4ba2b2ed5478b46f9a2008d0cb68e4a2801114c35c92ae19a"
+    },
+    {
+      "task_id": "M021_doc_reference_verification",
+      "category": "doc_search",
+      "language": "en",
+      "task_yaml": "tasks/M021_doc_reference_verification/task.yaml",
+      "task_yaml_sha256": "f7001026e21fa0251100caefa3d977450d86dd17252aa48123748ee80865a764"
+    },
+    {
+      "task_id": "M022_video_movie_recognition",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M022_video_movie_recognition/task.yaml",
+      "task_yaml_sha256": "a99766f08e3e0cb3d9a1b0494fec6b663643ec87cb87ce1befdccfce224cda11"
+    },
+    {
+      "task_id": "M023_video_paper_understanding",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M023_video_paper_understanding/task.yaml",
+      "task_yaml_sha256": "ab4bbad0e3d115ba50e9c26022edb0b9ea31575e6f9b96003c76b61a8e6e0637"
+    },
+    {
+      "task_id": "M024_video_factory_promo_webpage",
+      "category": "video_webpage",
+      "language": "zh",
+      "task_yaml": "tasks/M024_video_factory_promo_webpage/task.yaml",
+      "task_yaml_sha256": "541ce732f20b109aac0484f3d50d2b8ec7630bd27903ad71153fabf3b093d40a"
+    },
+    {
+      "task_id": "M025_video_badminton_match_qa",
+      "category": "video_qa",
+      "language": "zh",
+      "task_yaml": "tasks/M025_video_badminton_match_qa/task.yaml",
+      "task_yaml_sha256": "a8e8458ee2a3d95f22060917bf19332096e24502c950f2ddb16a562e456294f7"
+    },
+    {
+      "task_id": "M026_video_story_interactive_webpage",
+      "category": "video_webpage",
+      "language": "zh",
+      "task_yaml": "tasks/M026_video_story_interactive_webpage/task.yaml",
+      "task_yaml_sha256": "7469ec6b0dcf47d89aeada695fdb8d3e79c1b9755fe372ec0de01212ab5eb888"
+    },
+    {
+      "task_id": "M027_video_food_memo",
+      "category": "video_qa",
+      "language": "zh",
+      "task_yaml": "tasks/M027_video_food_memo/task.yaml",
+      "task_yaml_sha256": "acc680160836cf99c2ba5f3e873898494751ed181be6698c2ed79af1bc756c42"
+    },
+    {
+      "task_id": "M028_video_badminton_score_chart",
+      "category": "video_chart",
+      "language": "en",
+      "task_yaml": "tasks/M028_video_badminton_score_chart/task.yaml",
+      "task_yaml_sha256": "f9ba27c76223c95750619fe3691401caef4a1b0bfaca514bdfb5688c0d0a6504"
+    },
+    {
+      "task_id": "M029_video_surveillance_clip",
+      "category": "video_edit",
+      "language": "zh",
+      "task_yaml": "tasks/M029_video_surveillance_clip/task.yaml",
+      "task_yaml_sha256": "3dffffd8fce8c867f05d365bc3b011d4bb3ef2fecf94a9d2652858ff9d2d8654"
+    },
+    {
+      "task_id": "M030_video_snack_checklist",
+      "category": "video_image",
+      "language": "zh",
+      "task_yaml": "tasks/M030_video_snack_checklist/task.yaml",
+      "task_yaml_sha256": "1ff73ba0c014d4ee8dad171b2c2946577725358058309e65a3682a054d6ed68d"
+    },
+    {
+      "task_id": "M031_video_room_floorplan",
+      "category": "video_image",
+      "language": "en",
+      "task_yaml": "tasks/M031_video_room_floorplan/task.yaml",
+      "task_yaml_sha256": "3c58b1fd2ead3c2a51f42c930ad729dddb43c53f62630cb879220808b6059edd"
+    },
+    {
+      "task_id": "M032_video_tennis_rally_qa",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M032_video_tennis_rally_qa/task.yaml",
+      "task_yaml_sha256": "5d7e208f2169a866873f6e42f4eca90cbdc33faa7d51f4387dec56f9220b7623"
+    },
+    {
+      "task_id": "M033_video_tennis_breakpoint_qa",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M033_video_tennis_breakpoint_qa/task.yaml",
+      "task_yaml_sha256": "85c8f672f22dd671fd75f40cf6330b3c2f7f23db52cea7634b52888ca83721b5"
+    },
+    {
+      "task_id": "M034_video_tennis_shotlog_qa",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M034_video_tennis_shotlog_qa/task.yaml",
+      "task_yaml_sha256": "6c22afa35dc281731c67f9bad6cea8c1b86ff55e7f6253f5c9a5a007b374fa77"
+    },
+    {
+      "task_id": "M035_video_tennis_exhibition_qa",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M035_video_tennis_exhibition_qa/task.yaml",
+      "task_yaml_sha256": "fe48117e30808506011daa870911cd38b1eff4a060c57cee6a45e687fe5de410"
+    },
+    {
+      "task_id": "M036_video_butterfly_drawing_tutorial",
+      "category": "multimodal",
+      "language": "zh",
+      "task_yaml": "tasks/M036_video_butterfly_drawing_tutorial/task.yaml",
+      "task_yaml_sha256": "d408b6cf55ddf7aacb8e29650b69bde1df787ac1959631287d8b3219b3252176"
+    },
+    {
+      "task_id": "M037_video_food_shop_search",
+      "category": "multimodal",
+      "language": "zh",
+      "task_yaml": "tasks/M037_video_food_shop_search/task.yaml",
+      "task_yaml_sha256": "d5871c08eebad2cefcf731da72fa32915d0104eeea95b20896cb807d5c217a95"
+    },
+    {
+      "task_id": "M038_video_lvb_hill_descent",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M038_video_lvb_hill_descent/task.yaml",
+      "task_yaml_sha256": "a5bc50d6621b98433bd31fbb3cdaebe407f4d4f33cb71a4eeb39e2bc160bc8ea"
+    },
+    {
+      "task_id": "M039_video_lvb_machine_dog",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M039_video_lvb_machine_dog/task.yaml",
+      "task_yaml_sha256": "99480f84f0c9f1deec980f8a8420f4ec2fa2fc782eccf9df8ca952e52ca244b5"
+    },
+    {
+      "task_id": "M040_video_lvb_vehicle_identification",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M040_video_lvb_vehicle_identification/task.yaml",
+      "task_yaml_sha256": "ebfd45e0af67f492b03c1cbe0ff2db77b360381aa5566307355ea1381ffaa9af"
+    },
+    {
+      "task_id": "M041_video_lvb_artwork_scene",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M041_video_lvb_artwork_scene/task.yaml",
+      "task_yaml_sha256": "548440cefeff1cfd04b62acfcd2fb79269d80c202d1d0fa5f91ef0868cc89f4e"
+    },
+    {
+      "task_id": "M042_video_mme_multihop_reasoning",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M042_video_mme_multihop_reasoning/task.yaml",
+      "task_yaml_sha256": "3ef02539cc76d487330ebf9fcf79f8dd3b2366a05abc04dd1a029c3149dfd299"
+    },
+    {
+      "task_id": "M043_video_mme_device_identification",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M043_video_mme_device_identification/task.yaml",
+      "task_yaml_sha256": "f1bed7506b589f74f247bbcc8957a8f74048d03b862110c30060316643070c68"
+    },
+    {
+      "task_id": "M044_video_mme_bugatti_identification",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M044_video_mme_bugatti_identification/task.yaml",
+      "task_yaml_sha256": "dd2a6062fb2d447bf0223de2ec844f75cfa027423f45c33184d0ad217fe3a777"
+    },
+    {
+      "task_id": "M045_video_mme_building_identification",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M045_video_mme_building_identification/task.yaml",
+      "task_yaml_sha256": "9d6c7f3916b95923c68014d15e8b379138a8b126236b613defd615c300fdaadd"
+    },
+    {
+      "task_id": "M046_video_mme_news_segments",
+      "category": "video_search",
+      "language": "en",
+      "task_yaml": "tasks/M046_video_mme_news_segments/task.yaml",
+      "task_yaml_sha256": "bcc9d2aacee8e87bc1467e932e926d4aa0f1f6bdf318aaabb8a691646640c16d"
+    },
+    {
+      "task_id": "M047_video_fitness_exercise_summary",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M047_video_fitness_exercise_summary/task.yaml",
+      "task_yaml_sha256": "3156f03cdfd0a1f55ce0b5d535d1d41e4c3442e7c5fad0c7ef16f154ad9bfd17"
+    },
+    {
+      "task_id": "M048_video_fitness_pullup_frames",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M048_video_fitness_pullup_frames/task.yaml",
+      "task_yaml_sha256": "aa527e505720e6cc9c80eb96e41136b8ac3984313a4a3f1f8a97fd7534644199"
+    },
+    {
+      "task_id": "M049_video_phone_comparison",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M049_video_phone_comparison/task.yaml",
+      "task_yaml_sha256": "dd615048374980471d17fe7099dc3d06526be8fac5e51154c5bb408290322f26"
+    },
+    {
+      "task_id": "M050_video_shopping_receipt",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M050_video_shopping_receipt/task.yaml",
+      "task_yaml_sha256": "a6a5a0b8004341c4b82957035423c7d0864f7351e4e97080f61a4ce5db5c06fb"
+    },
+    {
+      "task_id": "M051_video_surveillance_intrusion",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M051_video_surveillance_intrusion/task.yaml",
+      "task_yaml_sha256": "c1567e91e1c64c7d208b80ec76afd53d8b26fefdebe7704d9d83f0e57ee0a5bb"
+    },
+    {
+      "task_id": "M052_webpage_recreation",
+      "category": "webpage_generation",
+      "language": "en",
+      "task_yaml": "tasks/M052_webpage_recreation/task.yaml",
+      "task_yaml_sha256": "609e2f65f369831929ad5e88fc0eaf1e5213f0d3ef2e4ed82fbf961b222bd02b"
+    },
+    {
+      "task_id": "M053_video_badminton_rally_count",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M053_video_badminton_rally_count/task.yaml",
+      "task_yaml_sha256": "4f165ab22ae9d83d2aa84129db3140de7b5470102d87d69b45a23c246f0c6b2e"
+    },
+    {
+      "task_id": "M054_video_badminton_match_analysis",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M054_video_badminton_match_analysis/task.yaml",
+      "task_yaml_sha256": "e62d89e6df8287b20d8469a4b7fec2f5d106cef2dbc16f11110decfd49ca55ba"
+    },
+    {
+      "task_id": "M055_video_badminton_baseline_out",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M055_video_badminton_baseline_out/task.yaml",
+      "task_yaml_sha256": "0372020a8ba5021726009e36e329a7f20759cc64a8592e308d3a411fd39b3462"
+    },
+    {
+      "task_id": "M056_video_badminton_net_error",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M056_video_badminton_net_error/task.yaml",
+      "task_yaml_sha256": "fb226548f48a99547d6130f18e26d95e221a03125d1027876a3e4804aa7072fb"
+    },
+    {
+      "task_id": "M057_video_pingpong_rally_count",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M057_video_pingpong_rally_count/task.yaml",
+      "task_yaml_sha256": "1a28f5d7138c1e0405ce17e071a55ceebfcfd4da20e7642d6549b18b32c724e4"
+    },
+    {
+      "task_id": "M058_video_pingpong_serve_stats",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M058_video_pingpong_serve_stats/task.yaml",
+      "task_yaml_sha256": "15eab8031aa1504ee90e42ece54ec4303dddd60cdd7b0d9f0f4e58ea3e87dd30"
+    },
+    {
+      "task_id": "M059_video_pingpong_smash_ace",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M059_video_pingpong_smash_ace/task.yaml",
+      "task_yaml_sha256": "d5a0a05e98c476b5e5e5c0d6337f54e7c7ab694092b10c41444c21d2ad500e20"
+    },
+    {
+      "task_id": "M060_video_pingpong_let_serve",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M060_video_pingpong_let_serve/task.yaml",
+      "task_yaml_sha256": "22b761da7eb73661e986bb675eae338977e49c17c821a52269429f5ac074832e"
+    },
+    {
+      "task_id": "M061_video_snooker_clearance_sequence",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M061_video_snooker_clearance_sequence/task.yaml",
+      "task_yaml_sha256": "4c6914c6c94836506f4c8f5dad50cbb30d3b7b3d945ad985e657b239d531b157"
+    },
+    {
+      "task_id": "M062_video_snooker_brown_ball_time",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M062_video_snooker_brown_ball_time/task.yaml",
+      "task_yaml_sha256": "566fdb6e4b4d270cba9d3898be3d4b30392849db6ec2a19ba56c91be56842d20"
+    },
+    {
+      "task_id": "M063_video_soccer_goal_analysis",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M063_video_soccer_goal_analysis/task.yaml",
+      "task_yaml_sha256": "5faa4cac2b4fcb3cf53fe548fbdbb313c4cbba33f61f778a0a9598f71e6a88a9"
+    },
+    {
+      "task_id": "M064_video_soccer_save_analysis",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M064_video_soccer_save_analysis/task.yaml",
+      "task_yaml_sha256": "4ee30d136bf298b18fdc2bd0128be365b829ec6a719fcb9b157a2075dbe64ca5"
+    },
+    {
+      "task_id": "M065_video_tennis_net_error",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M065_video_tennis_net_error/task.yaml",
+      "task_yaml_sha256": "67728ff6483ba0120b64f4e09bfd56fb0da1e8e6e591070e4c74cb87f337afd2"
+    },
+    {
+      "task_id": "M066_video_tennis_lob_winner",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M066_video_tennis_lob_winner/task.yaml",
+      "task_yaml_sha256": "7f0aac610f976a80b0021981eface8394d09d8860c7887f5c17912dbf3bb283b"
+    },
+    {
+      "task_id": "M067_video_tennis_long_rally",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M067_video_tennis_long_rally/task.yaml",
+      "task_yaml_sha256": "9a8d79461528fe76ac11719121a887bd15c7951059e364d048d166c9569d8f1d"
+    },
+    {
+      "task_id": "M068_video_tennis_set_point_analysis",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M068_video_tennis_set_point_analysis/task.yaml",
+      "task_yaml_sha256": "6cf6a8f7693b31c04bfeb5f5511011f3518c5f2d62b138782ff2a84554ec4c42"
+    },
+    {
+      "task_id": "M069_video_tennis_ace_return_ace",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M069_video_tennis_ace_return_ace/task.yaml",
+      "task_yaml_sha256": "a45c9655f45ca85bb15f7bb1789ac03a4c3385bc1727755c73ffaa61d8f90453"
+    },
+    {
+      "task_id": "M070_video_tennis_serve_game_stats",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M070_video_tennis_serve_game_stats/task.yaml",
+      "task_yaml_sha256": "3b590a4103da7527d0da33f2ca77f0f0004bb4bebb6bc9daaf832c5d19b6c99b"
+    },
+    {
+      "task_id": "M071_video_tennis_break_point_stats",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M071_video_tennis_break_point_stats/task.yaml",
+      "task_yaml_sha256": "dfaf427b5ee32c04ac7d22fea6b091fecb21151d1ae64191aabbf14db0ab99cc"
+    },
+    {
+      "task_id": "M072_video_tennis_set_end_time",
+      "category": "video_qa",
+      "language": "en",
+      "task_yaml": "tasks/M072_video_tennis_set_end_time/task.yaml",
+      "task_yaml_sha256": "25cee1306deec0a23c79eecb4e7fcd64293ab3f5a230821c61598a917c627707"
+    },
+    {
+      "task_id": "M073_doc_extraction_training_cost",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M073_doc_extraction_training_cost/task.yaml",
+      "task_yaml_sha256": "5f0139191045079ea0b146a7b3ebcadeeb7f1d03713feca6312f27f460bf3c54"
+    },
+    {
+      "task_id": "M074_doc_extraction_thinking_impact",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M074_doc_extraction_thinking_impact/task.yaml",
+      "task_yaml_sha256": "a4a623ec6fe232335cabb3c018c226bc96da6b8b7c71c1d6533493d31f419446"
+    },
+    {
+      "task_id": "M075_doc_extraction_spatial_leaderboard",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M075_doc_extraction_spatial_leaderboard/task.yaml",
+      "task_yaml_sha256": "dd1cd2416606a92cfb50eff4d1efc4e087f7381e1a52cb3647a9771fc6eb1f47"
+    },
+    {
+      "task_id": "M076_doc_extraction_cross_table_merge",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M076_doc_extraction_cross_table_merge/task.yaml",
+      "task_yaml_sha256": "fa253a7f84d8489e288dea28d048e372395d2ff467ff48c637327df7425fcf80"
+    },
+    {
+      "task_id": "M077_doc_extraction_cross_modality",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M077_doc_extraction_cross_modality/task.yaml",
+      "task_yaml_sha256": "27cc8f038e36f2e03a475acb1e390d888426b1d6ecc234115c3db5b9a9751e5c"
+    },
+    {
+      "task_id": "M078_doc_extraction_cross_benchmark",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M078_doc_extraction_cross_benchmark/task.yaml",
+      "task_yaml_sha256": "867561b6ae6c74d82af2d0637e9d7c3ecca0e079937b1c2abddc1d7af7e4d465"
+    },
+    {
+      "task_id": "M079_doc_extraction_f1_verification",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M079_doc_extraction_f1_verification/task.yaml",
+      "task_yaml_sha256": "784b9f54425a175f99b40b9953d35d61e91825f452c947877aecef0a752f7b42"
+    },
+    {
+      "task_id": "M080_doc_extraction_delta_comparison",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M080_doc_extraction_delta_comparison/task.yaml",
+      "task_yaml_sha256": "a9b291a9f311d4a73bcfe678286a9dd9ea3aa0772764f0e3e47534b47920c703"
+    },
+    {
+      "task_id": "M081_doc_extraction_heatmap_comparison",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M081_doc_extraction_heatmap_comparison/task.yaml",
+      "task_yaml_sha256": "ec7496eacf4c9d6b809e7458fa371c318813edb03973bdfed75fa9c44d66b3be"
+    },
+    {
+      "task_id": "M082_multi_doc_extraction_scatter",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M082_multi_doc_extraction_scatter/task.yaml",
+      "task_yaml_sha256": "e7ce1357db39df47cd2f290539e9bd90cfa2f6762b822a12d431cb0724176960"
+    },
+    {
+      "task_id": "M083_multi_doc_extraction_horizontal_bar",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M083_multi_doc_extraction_horizontal_bar/task.yaml",
+      "task_yaml_sha256": "9a607a23c8f84bfedcdb1324bfbffda982b01cf74a5a4d7d42084e2b5b02cc1b"
+    },
+    {
+      "task_id": "M084_doc_figure_reproduction_pie",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M084_doc_figure_reproduction_pie/task.yaml",
+      "task_yaml_sha256": "2f1c1234bde272840988a08aa5e03eecb45e2641ea58a8294a6fa6cc35f0a34c"
+    },
+    {
+      "task_id": "M085_doc_figure_reproduction_bar",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M085_doc_figure_reproduction_bar/task.yaml",
+      "task_yaml_sha256": "1117300cce8df230b6eab3b18c10cf6318b3055734521dcb156aec4d10b2194b"
+    },
+    {
+      "task_id": "M086_doc_figure_reproduction_line",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M086_doc_figure_reproduction_line/task.yaml",
+      "task_yaml_sha256": "cd0e2b808a9454e0b35167729cf28cb1d4a6d7a3618d0baa6a61d75f8cb7eb6e"
+    },
+    {
+      "task_id": "M087_multi_doc_extraction_grouped_bar",
+      "category": "doc_extraction",
+      "language": "en",
+      "task_yaml": "tasks/M087_multi_doc_extraction_grouped_bar/task.yaml",
+      "task_yaml_sha256": "2729d39bcdd05321ec5d65287c2891fdbeb0b2c8107e4b922393d7408325b54d"
+    },
+    {
+      "task_id": "M088_video_movie_clip_extraction",
+      "category": "video_edit",
+      "language": "zh",
+      "task_yaml": "tasks/M088_video_movie_clip_extraction/task.yaml",
+      "task_yaml_sha256": "3b5b7a0c7d333ded7ed91dfb90d20cc2bd6bc7517340b45ff40534cebd86f25f"
+    },
+    {
+      "task_id": "M089_video_movie_scene_meme",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M089_video_movie_scene_meme/task.yaml",
+      "task_yaml_sha256": "80a7a930e4d560972b4f357dbb70f439e9485660824966624ba2bddf801a2441"
+    },
+    {
+      "task_id": "M090_video_movie_qa_wedding",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M090_video_movie_qa_wedding/task.yaml",
+      "task_yaml_sha256": "c0e3d4052dc20dc449480b29422acd3467da661c4a3b74274f741a34cd58cf82"
+    },
+    {
+      "task_id": "M091_video_movie_qa_flashback",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M091_video_movie_qa_flashback/task.yaml",
+      "task_yaml_sha256": "3be210cd4e6917c75d8c4a78ffe85980260ae35b048e5a066c878ff6a8604e4a"
+    },
+    {
+      "task_id": "M092_video_movie_title_localization",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M092_video_movie_title_localization/task.yaml",
+      "task_yaml_sha256": "1ae2e2979283a156c68faa24e457096e68d415468afa2df44aff73cadda31f74"
+    },
+    {
+      "task_id": "M093_video_movie_concat_subtitle",
+      "category": "video_edit",
+      "language": "zh",
+      "task_yaml": "tasks/M093_video_movie_concat_subtitle/task.yaml",
+      "task_yaml_sha256": "1115eb1fb706b65de63e1bae88a26d2bc92f27e6c186b87c940c81833155111c"
+    },
+    {
+      "task_id": "M094_video_movie_band_extraction",
+      "category": "video_edit",
+      "language": "zh",
+      "task_yaml": "tasks/M094_video_movie_band_extraction/task.yaml",
+      "task_yaml_sha256": "7f1f175b3d6571a445762516e89bfdfddd37164ad44cdf9faf9ad74c8d4a77d3"
+    },
+    {
+      "task_id": "M095_video_movie_character_id",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M095_video_movie_character_id/task.yaml",
+      "task_yaml_sha256": "043b747fd14b5fc98b15887b295729ae1fedae0927c2f1c06ce4afcd8f648748"
+    },
+    {
+      "task_id": "M096_video_movie_title_director",
+      "category": "video_search",
+      "language": "zh",
+      "task_yaml": "tasks/M096_video_movie_title_director/task.yaml",
+      "task_yaml_sha256": "ba6699df3971151a2713cd3596c5273715da1b200fdee6d8e6af470fa790f789"
+    },
+    {
+      "task_id": "M097_video_movie_speed_edit",
+      "category": "video_edit",
+      "language": "zh",
+      "task_yaml": "tasks/M097_video_movie_speed_edit/task.yaml",
+      "task_yaml_sha256": "ea0c8d876492d6bc449ee57c930592efd79b7330987935f29a50fa40275b426f"
+    },
+    {
+      "task_id": "M098_video_craft_webpage",
+      "category": "web_dev",
+      "language": "zh",
+      "task_yaml": "tasks/M098_video_craft_webpage/task.yaml",
+      "task_yaml_sha256": "a90bc2975e9c41bed0164c4b744caf9b1d3df2efbcb1c9065e98f2f325a57642"
+    },
+    {
+      "task_id": "M099_su7_price_from_image_zh",
+      "category": "multimodal",
+      "language": "zh",
+      "task_yaml": "tasks/M099_su7_price_from_image_zh/task.yaml",
+      "task_yaml_sha256": "2e569a2225060b363d53b7a09683b0e18cddf99e6d9b634788c7039c34c661dd"
+    },
+    {
+      "task_id": "M100_su7_price_from_image",
+      "category": "multimodal",
+      "language": "en",
+      "task_yaml": "tasks/M100_su7_price_from_image/task.yaml",
+      "task_yaml_sha256": "66902e6a8e7f51ee9b3afc1b677bc134cb45f2b8b8fb3732ad1237006fa76067"
+    },
+    {
+      "task_id": "M101_chinese_food_identification_zh",
+      "category": "multimodal",
+      "language": "zh",
+      "task_yaml": "tasks/M101_chinese_food_identification_zh/task.yaml",
+      "task_yaml_sha256": "bbc402e679a656e458d8963cb295d1db17c009bf625f6019be8b557671ca0824"
+    }
+  ]
+}

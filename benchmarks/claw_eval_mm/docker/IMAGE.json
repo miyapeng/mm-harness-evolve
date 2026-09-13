@@ -1,0 +1,19 @@
+{
+  "canonical_recipe": "third_party/claw-eval-5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7/Dockerfile.agent",
+  "compatibility_recipe": "benchmarks/claw_eval_mm/docker/Containerfile.pjlab",
+  "source_commit": "5680b8b11ff2ee5dd2b07b89086a29a5c5c984d7",
+  "base_image": "registry.pjlab.org.cn/ccr-t-llm-frontier/vision2web@sha256:3d2fa9b0999a1fbb10c9d4ccc653c7d5560a713668d6c18c80d0d06e36e43056",
+  "target_image": "registry.pjlab.org.cn/ccr-t-llm-frontier/claw-eval:agent-5680b8b-pjlab",
+  "target_digest": "sha256:a3a42b5c1cc367a162c6760217aece1c5817098da0f4fcae05dc7e5c8e4f3878",
+  "status": "built_pushed_verified",
+  "validation": {
+    "date": "2026-09-09",
+    "architecture": "amd64",
+    "os": "linux",
+    "health_endpoint": {"status": "ok"},
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "pdftoppm": "/usr/bin/pdftoppm",
+    "chromium_executable": true,
+    "method": "Buildah vfs/chroot in-image check; no model rollout"
+  }
+}

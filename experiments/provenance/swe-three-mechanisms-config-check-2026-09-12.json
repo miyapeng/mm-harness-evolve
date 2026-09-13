@@ -1,0 +1,31 @@
+{
+  "scope": "native_configuration_check_no_model_or_rollout",
+  "upstream": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+  "policy": "swe-mm-three-mechanisms-v1",
+  "results": [
+    {
+      "category": "observation",
+      "native_config_valid": true,
+      "model": "openai/Qwen3.8-27B",
+      "changed_paths": [
+        "agent.templates.instance_template"
+      ]
+    },
+    {
+      "category": "context",
+      "native_config_valid": true,
+      "model": "openai/Qwen3.8-27B",
+      "changed_paths": [
+        "agent.history_processors"
+      ]
+    },
+    {
+      "category": "verification",
+      "native_config_valid": true,
+      "model": "openai/Qwen3.8-27B",
+      "changed_paths": [
+        "agent.tools.registry_variables.SUBMIT_REVIEW_MESSAGES"
+      ]
+    }
+  ]
+}

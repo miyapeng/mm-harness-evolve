@@ -1,0 +1,7 @@
+{
+  "instances_loaded": 102,
+  "problem_statement_type": "swe_bench_multimodal",
+  "issue_image_refs": 163,
+  "official_image_history_processor_retains_bytes": true,
+  "scope": "native data parsing and history processing only; no model request or container run"
+}

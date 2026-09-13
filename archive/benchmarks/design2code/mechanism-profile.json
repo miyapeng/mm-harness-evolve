@@ -1,0 +1,43 @@
+{
+  "status": "legacy_smoke",
+  "task_domain": "static screenshot to code",
+  "modalities": [
+    "image"
+  ],
+  "environment_type": "benchmark-specific runtime",
+  "initial_media_available": true,
+  "active_observation_available": null,
+  "interactive_environment": null,
+  "current_h0_harness": "Design2Code/prompting/gpt4v.py:direct_prompting",
+  "current_h0_media_policy": "Historical adapter/protocol retained; no new runtime claim.",
+  "agent_visible_media": [
+    "reference screenshot"
+  ],
+  "evaluator_only_media": [
+    "reference HTML"
+  ],
+  "development_data_status": "No approved current development pool; historical splits are not reclassified.",
+  "heldout_evaluation_status": "No current protocol evaluation.",
+  "known_generic_failure_evidence": [],
+  "known_mm_failure_evidence": [],
+  "mechanism_headroom": "unknown",
+  "integration_status": "evolution_validated",
+  "integration_evidence": [
+    "experiments/results/design2code-smoke/README.md"
+  ],
+  "limitations": [
+    "Portfolio status is a role, not a validation claim.",
+    "Design2Code historical negative engineering loop used evaluation data; not current research evidence."
+  ],
+  "source_lock": null,
+  "benchmark_id": "design2code",
+  "applicable_mm_stages": [
+    "acquire",
+    "transform",
+    "persist",
+    "route",
+    "ground",
+    "verify"
+  ],
+  "mutation_boundary": "benchmarks/design2code/mutation-boundary.json"
+}

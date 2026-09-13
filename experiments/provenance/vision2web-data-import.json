@@ -1,0 +1,15 @@
+{
+  "benchmark": "vision2web",
+  "source": "/data/miyapeng/mmcode/MultimodalCode/data/vision2web/extracted",
+  "destination": "data/vision2web/extracted",
+  "transfer": "independent byte-verified copies, no symlinks",
+  "metadata": {
+    "manifest.json": "35e648374e1ee9dbec5979a52e9aae2094b11a6ea780ea1ac150b0a324cb427f",
+    "image.json": "e381036aea033e05588c50b5102f43094fa8d8f9534e7e520c7e6388bd02b6c4",
+    "instance_ids.txt": "999763f423decf5986749e895b7eb84bafbf5229fe579bf056d4ed10bc2b93a0"
+  },
+  "file_count": 21399,
+  "manifest": "data/vision2web/vision2web-import.json",
+  "manifest_sha256": "41b18cca4efd0576af6fed53558e1cf09ad95bc38acab8a1f1fa2cdba81447e5",
+  "bytes": 4372093156
+}

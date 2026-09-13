@@ -1,0 +1,54 @@
+{
+  "benchmark": "gamedevbench",
+  "status": "framework_only",
+  "upstream": {
+    "url": "https://github.com/waynchi/gamedevbench",
+    "commit": null,
+    "starting_point": "OpenHandsSolver with official visual feedback"
+  },
+  "executor_runtime": "OpenHandsSolver",
+  "h0_status": "upstream_recipe; not yet reproduced or frozen",
+  "protocol": {
+    "agent_input": [
+      "task description",
+      "starter project",
+      "released assets"
+    ],
+    "evaluator_only": [
+      "official tests",
+      "hidden solution"
+    ],
+    "group_key": "game/template",
+    "reference_answers_visible": false
+  },
+  "expected_artifacts": [
+    "project archive",
+    "runtime video"
+  ],
+  "native_metrics": [
+    "official test pass rate"
+  ],
+  "commands": {
+    "prepare": null,
+    "execute": null,
+    "score": null,
+    "cleanup": null
+  },
+  "timeout_seconds": 1800,
+  "score_timeout_seconds": 600,
+  "execution_components": {
+    "planner": "roles.executor",
+    "grounding": null
+  },
+  "evaluator": {
+    "source": "official",
+    "revision": null,
+    "vlm": null
+  },
+  "remaining": [
+    "Godot version and Xvfb/ffmpeg",
+    "official OpenHands solver entrypoint",
+    "interactive playtest and native tests"
+  ],
+  "transport": "command"
+}
